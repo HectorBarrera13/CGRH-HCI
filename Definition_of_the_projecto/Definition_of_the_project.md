@@ -2,13 +2,12 @@
 *Evaluación de Relevancia Social · Innovación · Factibilidad*
 
 > *CGRH — Coordinación General de Recursos Humanos*  
-> Especificado hacia Adultos Mayores
 
 ---
 
 ## 1. Relevancia Social
 
-El proyecto aborda la brecha digital para todos los empleados de la UADYA, pero mayormente enfocado hacia los adultos mayores, un grupo socialmente vulnerable que enfrenta barreras significativas para acceder a servicios esenciales (financieros, laborales) debido al diseño de sistemas digitales que no consideran sus capacidades cognitivas, físicas y tecnológicas.
+El proyecto aborda la brecha digital para todos los empleados de la UADY, pero mayormente enfocado hacia los adultos mayores, un grupo socialmente vulnerable que enfrenta barreras significativas para acceder a servicios esenciales (financieros, laborales) debido al diseño de sistemas digitales que no consideran sus capacidades cognitivas, físicas y tecnológicas.
 
 ### Argumento Principal
 
