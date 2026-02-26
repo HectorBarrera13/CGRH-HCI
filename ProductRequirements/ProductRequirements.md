@@ -2,7 +2,7 @@
 
 **Universidad Autónoma de Yucatán — Facultad de Matemáticas | Ingeniería en Software**  
 **Entregable HCI — Sistema CGRH (Coordinación General de Recursos Humanos)**  
-*Enfocado en usuarios adultos mayores jubilados (60+ años) — Mérida, Yucatán, 2026*
+*Mérida, Yucatán, 2026*
 
 ---
 
@@ -28,12 +28,11 @@
 
 ## 1. Introducción y Contexto del Sistema
 
-El Sistema CGRH (Coordinación General de Recursos Humanos) de la Universidad Autónoma de Yucatán es una plataforma digital de autoservicio que permite a empleados y jubilados UADY consultar sus prestaciones económicas: recibos de nómina (CFDI), Fondo de Ahorro para el Retiro (FAR) y Caja de Ahorro.
+El Sistema para la CGRH (Coordinación General de Recursos Humanos) de la Universidad Autónoma de Yucatán es una plataforma digital de autoservicio que permite a empleados y jubilados UADY consultar su información económica: recibos de nómina (CFDI), Fondo de Ahorro para el Retiro (FAR) y Caja de Ahorro.
 
 El contexto de uso más crítico desde la perspectiva de HCI involucra a **empleados jubilados mayores de 60 años** con nivel básico de alfabetización digital, acceso predominante desde dispositivos Android básicos y posibles limitaciones visuales y cognitivas. Este perfil define las prioridades de diseño de todos los requerimientos aquí descritos.
 
-> 💡 **Usuarios objetivo primarios:** Jubilados UADY, 60+ años, alfabetización digital básica, dispositivos Android de gama baja.
-> La inclusión digital de este grupo no es solo un objetivo de usabilidad — es una cuestión de **acceso a derechos y autonomía financiera**.
+> **Usuarios objetivo primarios:** Jubilados UADY, 60+ años, alfabetización digital básica, computadoras con especificaciones low-end.
 
 ---
 
@@ -46,16 +45,16 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 
 | ID | Nombre | Prioridad HCI | Datos Involucrados | Nivel de Fricción (usuario 60+) |
 |---|---|---|---|---|
-| RF01 | Registro de Empleado | Alta | Clave, RFC, CURP, correo institucional, contraseña, teléfono | 🔴 **Alto** — múltiples campos, CAPTCHA, flujo en 2 pasos |
-| RF02 | Recuperar Contraseña | Alta | Correo institucional → enlace temporal → nueva contraseña | 🔴 **Alto** — memoria de credenciales, gestión de correo |
-| RF03 | Iniciar Sesión | Alta | Usuario + contraseña → acceso al sistema | 🔴 **Alto** — punto de entrada, bloqueo = sin acceso a todo |
-| RF04 | Finalizar Sesión | Media | Botón de cerrar sesión en menú | 🟡 **Bajo** — acción clara y visible |
-| RF05 | Menú Principal | Alta | Vista de opciones disponibles tras login | 🟡 **Medio** — navegación y orientación del usuario |
-| RF10 | Consultar CFDI | Muy Alta | Lista de recibos con filtros, descarga PDF/XML | 🟡 **Medio** — lectura de datos financieros, descarga |
-| RF20 | Fondo de Ahorro para el Retiro | Muy Alta | Tarjeta con saldos, aportaciones, rendimientos, descarga PDF | 🟡 **Medio** — información financiera crítica |
-| RF30 | Caja de Ahorro | Muy Alta | Resumen de cuenta de caja de ahorro, descarga PDF | 🟡 **Medio** — información financiera crítica |
+| RF01 | Registro de Empleado | Alta | Clave, RFC, CURP, correo institucional, contraseña, teléfono | **Alto** — múltiples campos, CAPTCHA, flujo en 2 pasos |
+| RF02 | Recuperar Contraseña | Alta | Correo institucional → enlace temporal → nueva contraseña | **Alto** — memoria de credenciales, gestión de correo |
+| RF03 | Iniciar Sesión | Alta | Usuario + contraseña → acceso al sistema | **Alto** — punto de entrada, bloqueo = sin acceso a todo |
+| RF04 | Finalizar Sesión | Media | Botón de cerrar sesión en menú | **Bajo**, acción clara y visible |
+| RF05 | Menú Principal | Alta | Vista de opciones disponibles tras login | **Medio** — navegación y orientación del usuario |
+| RF10 | Consultar CFDI | Muy Alta | Lista de recibos con filtros, descarga PDF/XML | **Medio** - lectura de datos financieros, descarga |
+| RF20 | Fondo de Ahorro para el Retiro | Muy Alta | Tarjeta con saldos, aportaciones, rendimientos, descarga PDF | **Medio** — información financiera crítica |
+| RF30 | Caja de Ahorro | Muy Alta | Resumen de cuenta de caja de ahorro, descarga PDF | **Medio** — información financiera crítica |
 
-> ⚠️ **Nota:** Los requerimientos RF01, RF02 y RF03 representan los **puntos de mayor fricción** para el usuario de 60+ años. Un fallo en cualquiera de estos bloquea el acceso a toda la plataforma.
+> **Nota:** Los requerimientos RF01, RF02 y RF03 representan los **puntos de mayor fricción** para el usuario de 60+ años. Un fallo en cualquiera de estos bloquea el acceso a toda la plataforma.
 
 ---
 
@@ -63,7 +62,7 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 
 ---
 
-### 3.1 RF01 — Registro de Empleado 🔴 Alta Fricción
+### 3.1 RF01 — Registro de Empleado - Alta Fricción
 
 | Campo | Detalle |
 |---|---|
@@ -86,11 +85,11 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 - **Alt. 3:** Correos no coinciden → campo en rojo con mensaje descriptivo.
 - **Alt. 4:** Usuario ya registrado → mensaje informativo con enlace a login.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Flujo en 2 pasos necesario pero complejo para adultos mayores. Recomendaciones: instrucciones claras antes de cada campo, indicador de progreso visible ("Paso 1 de 2"), mensajes de error en lenguaje sencillo sin tecnicismos, CAPTCHA accesible, tamaño de fuente mínimo 16pt, botones táctiles grandes (≥ 48×48 dp). Considerar guía visual o tutorial para el primer acceso.
+> **Consideraciones HCI/Usabilidad:** Flujo en 2 pasos necesario pero complejo para adultos mayores. Recomendaciones: instrucciones claras antes de cada campo, indicador de progreso visible ("Paso 1 de 2"), mensajes de error en lenguaje sencillo sin tecnicismos, CAPTCHA accesible, tamaño de fuente mínimo 16pt, botones táctiles grandes (≥ 48×48 dp). Considerar guía visual o tutorial para el primer acceso.
 
 ---
 
-### 3.2 RF02 — Recuperar Contraseña 🔴 Alta Fricción
+### 3.2 RF02 — Recuperar Contraseña - Alta Fricción
 
 | Campo | Detalle |
 |---|---|
@@ -113,7 +112,7 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 - **Alt. 2:** Enlace caducado → mensaje y opción de reenvío.
 - **Alt. 3:** Nueva contraseña no cumple requisitos → indicación visual de reglas.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Este es el flujo más crítico del sistema para adultos mayores: implica recordar contraseña, acceder a correo y crear una nueva contraseña compleja. Recomendaciones: mostrar requisitos de contraseña en tiempo real con indicador visual (débil/media/fuerte), permitir ver la contraseña ingresada (ícono ojo), mensajes de error extremadamente claros, tiempo de expiración del enlace no menor a 30 minutos, y siempre mostrar el número de RRHH como alternativa de soporte.
+> **Consideraciones HCI/Usabilidad:** Este es el flujo más crítico del sistema para adultos mayores: implica recordar contraseña, acceder a correo y crear una nueva contraseña compleja. Recomendaciones: mostrar requisitos de contraseña en tiempo real con indicador visual (débil/media/fuerte), permitir ver la contraseña ingresada (ícono ojo), mensajes de error extremadamente claros, tiempo de expiración del enlace no menor a 30 minutos, y siempre mostrar el número de RRHH como alternativa de soporte.
 
 ---
 
@@ -136,7 +135,7 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 - **Alt. 1:** Usuario o contraseña incorrectos → mensaje "El usuario o la contraseña son incorrectos", limpia los campos.
 - **Ext. 1:** Usuario selecciona "Recuperar contraseña" → flujo RF02.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** El login es la puerta de entrada al sistema. Recomendaciones: campo de usuario pre-llenado si el dispositivo lo permite, botón de mostrar/ocultar contraseña, mensaje de error descriptivo sin revelar qué campo es incorrecto (seguridad), enlace de recuperación muy visible, no bloquear cuenta automáticamente sin aviso previo. Considerar opción "Recordarme" para dispositivos de confianza.
+> **Consideraciones HCI/Usabilidad:** El login es la puerta de entrada al sistema. Recomendaciones: campo de usuario pre-llenado si el dispositivo lo permite, botón de mostrar/ocultar contraseña, mensaje de error descriptivo sin revelar qué campo es incorrecto (seguridad), enlace de recuperación muy visible, no bloquear cuenta automáticamente sin aviso previo. Considerar opción "Recordarme" para dispositivos de confianza.
 
 ---
 
@@ -155,7 +154,7 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 
 **Flujos Alternativos:** Sin flujos alternativos significativos. La sesión también puede expirar por tiempo de inactividad.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Elemento de cierre de sesión siempre visible y claramente etiquetado como "Cerrar sesión" (no íconos ambiguos). Considerar confirmación antes de cerrar para evitar cierres accidentales. Tiempo de inactividad antes del cierre automático debe ser generoso (mínimo 15 minutos) dado el perfil de usuario.
+> **Consideraciones HCI/Usabilidad:** Elemento de cierre de sesión siempre visible y claramente etiquetado como "Cerrar sesión" (no íconos ambiguos). Considerar confirmación antes de cerrar para evitar cierres accidentales. Tiempo de inactividad antes del cierre automático debe ser generoso (mínimo 15 minutos) dado el perfil de usuario.
 
 ---
 
@@ -174,11 +173,11 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 
 **Flujos Alternativos:** Sin flujos alternativos. El menú es el punto de distribución principal.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Punto de orientación clave. Recomendaciones: máximo 4–5 opciones visibles para evitar sobrecarga cognitiva, íconos representativos acompañados **siempre** de texto descriptivo, jerarquía visual clara, bienvenida personalizada con nombre del usuario, y número de soporte de RRHH siempre visible en esta pantalla.
+> **Consideraciones HCI/Usabilidad:** Punto de orientación clave. Recomendaciones: máximo 4–5 opciones visibles para evitar sobrecarga cognitiva, íconos representativos acompañados **siempre** de texto descriptivo, jerarquía visual clara, bienvenida personalizada con nombre del usuario, y número de soporte de RRHH siempre visible en esta pantalla.
 
 ---
 
-### 3.6 RF10 — Consultar CFDIs 🟡 Alta Frecuencia
+### 3.6 RF10 — Consultar CFDIs - Alta Frecuencia
 
 | Campo | Detalle |
 |---|---|
@@ -197,11 +196,11 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 - **Alt. 1:** Sin filtros aplicados → muestra todos los CFDIs del año actual.
 - **Alt. 2:** Usuario cancela descarga del .zip → sistema cierra la ventana de guardado.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Función de mayor uso del sistema. Recomendaciones: mostrar primero el CFDI más reciente, usar términos familiares ("Recibo de Nómina" junto a "CFDI"), botones de descarga PDF grandes y visibles (PDF es más familiar que XML para adultos mayores), filtros simples con listas desplegables, paginación clara con números de página visibles, etiquetas de quincena en formato comprensible ("1a quincena enero" no solo "01/01/2026").
+> **Consideraciones HCI/Usabilidad:** Función de mayor uso del sistema. Recomendaciones: mostrar primero el CFDI más reciente, usar términos familiares ("Recibo de Nómina" junto a "CFDI"), botones de descarga PDF grandes y visibles (PDF es más familiar que XML para adultos mayores), filtros simples con listas desplegables, paginación clara con números de página visibles, etiquetas de quincena en formato comprensible ("1a quincena enero" no solo "01/01/2026").
 
 ---
 
-### 3.7 RF20 — Fondo de Ahorro para el Retiro 🟡 Alta Frecuencia
+### 3.7 RF20 — Fondo de Ahorro para el Retiro - Alta Frecuencia
 
 | Campo | Detalle |
 |---|---|
@@ -220,11 +219,11 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 
 **Flujos Alternativos:** Sin flujos alternativos (datos son de solo lectura).
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Información financiera de alto valor emocional para el jubilado. Recomendaciones: presentar el Saldo Final de forma prominente en tipografía grande, usar tarjeta bien delimitada visualmente, explicar brevemente cada concepto ("Rendimientos: intereses generados por tu ahorro"), indicar claramente la fecha del dato para evitar confusión sobre vigencia, botón de descarga PDF grande y claramente etiquetado.
+> **Consideraciones HCI/Usabilidad:** Información financiera de alto valor emocional para el jubilado. Recomendaciones: presentar el Saldo Final de forma prominente en tipografía grande, usar tarjeta bien delimitada visualmente, explicar brevemente cada concepto ("Rendimientos: intereses generados por tu ahorro"), indicar claramente la fecha del dato para evitar confusión sobre vigencia, botón de descarga PDF grande y claramente etiquetado.
 
 ---
 
-### 3.8 RF30 — Caja de Ahorro 🟡 Alta Frecuencia
+### 3.8 RF30 — Caja de Ahorro - Alta Frecuencia
 
 | Campo | Detalle |
 |---|---|
@@ -239,7 +238,7 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 
 **Flujos Alternativos:** Sin flujos alternativos (datos son de solo lectura).
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Mismas consideraciones que RF20. Presentación visual clara con énfasis en saldo actual y descarga de reporte. La **consistencia visual con RF20** es importante para reducir la curva de aprendizaje del usuario.
+> **Consideraciones HCI/Usabilidad:** Mismas consideraciones que RF20. Presentación visual clara con énfasis en saldo actual y descarga de reporte. La **consistencia visual con RF20** es importante para reducir la curva de aprendizaje del usuario.
 
 ---
 
