@@ -29,7 +29,7 @@ Las entrevistas se utilizarán para comprender las necesidades, limitaciones y e
 ### 2. Contextual Inquiry
 
 **Justificación:**  
-La observación contextual se aplicará para analizar cómo los usuarios interactúan con el sistema en su entorno real, ya sea desde una computadora personal o un dispositivo móvil Android básico. Este método permitirá identificar problemas que podrían no ser mencionados directamente por los usuarios durante entrevistas.
+La observación contextual se aplicará para analizar cómo los usuarios interactúan con el sistema en su entorno real, ya sea desde una computadora personal o del trabajo. Este método permitirá identificar problemas que podrían no ser mencionados directamente por los usuarios durante entrevistas.
 
 **Se espera obtener:**
 
