@@ -28,11 +28,12 @@
 
 ## 1. Introducción y Contexto del Sistema
 
-El Sistema para la CGRH (Coordinación General de Recursos Humanos) de la Universidad Autónoma de Yucatán es una plataforma digital de autoservicio que permite a empleados y jubilados UADY consultar su información económica: recibos de nómina (CFDI), Fondo de Ahorro para el Retiro (FAR) y Caja de Ahorro.
+El Sistema para la CGRH (Coordinación General de Recursos Humanos) de la Universidad Autónoma de Yucatán es una plataforma digital de autoservicio que permite a **todos los empleados activos y jubilados de la UADY** consultar su información económica: recibos de nómina (CFDI), Fondo de Ahorro para el Retiro (FAR) y Caja de Ahorro.
 
-El contexto de uso más crítico desde la perspectiva de HCI involucra a **empleados jubilados mayores de 60 años** con nivel básico de alfabetización digital, acceso predominante desde dispositivos Android básicos y posibles limitaciones visuales y cognitivas. Este perfil define las prioridades de diseño de todos los requerimientos aquí descritos.
+Para efectos de este análisis HCI — enmarcado como subproyecto académico — el contexto de uso de mayor interés involucra a **empleados jubilados mayores de 60 años** con nivel básico de alfabetización digital, acceso predominante desde computadoras de escritorio con especificaciones low-end y posibles limitaciones visuales y cognitivas. Este perfil define las prioridades de diseño de todos los requerimientos aquí descritos, bajo la premisa de que los criterios derivados del segmento de mayor fricción benefician al sistema en su totalidad.
 
-> **Usuarios objetivo primarios:** Jubilados UADY, 60+ años, alfabetización digital básica, computadoras con especificaciones low-end.
+> **Usuarios del sistema:** Todos los empleados activos y jubilados de la UADY.  
+> **Segmento de análisis HCI (subproyecto académico):** Jubilados UADY, 60+ años, alfabetización digital básica, computadoras de escritorio con especificaciones low-end.
 
 ---
 
@@ -85,7 +86,7 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 - **Alt. 3:** Correos no coinciden → campo en rojo con mensaje descriptivo.
 - **Alt. 4:** Usuario ya registrado → mensaje informativo con enlace a login.
 
-> **Consideraciones HCI/Usabilidad:** Flujo en 2 pasos necesario pero complejo para adultos mayores. Recomendaciones: instrucciones claras antes de cada campo, indicador de progreso visible ("Paso 1 de 2"), mensajes de error en lenguaje sencillo sin tecnicismos, CAPTCHA accesible, tamaño de fuente mínimo 16pt, botones táctiles grandes (≥ 48×48 dp). Considerar guía visual o tutorial para el primer acceso.
+> **Consideraciones HCI/Usabilidad:** Flujo en 2 pasos necesario pero complejo para adultos mayores. Recomendaciones: instrucciones claras antes de cada campo, indicador de progreso visible ("Paso 1 de 2"), mensajes de error en lenguaje sencillo sin tecnicismos, CAPTCHA accesible, tamaño de fuente mínimo 16pt, botones con área clicable mínima de 44×44 px y espaciado suficiente para evitar clics accidentales con ratón. Considerar guía visual o tutorial para el primer acceso.
 
 ---
 
@@ -249,16 +250,16 @@ Los siguientes RNF se derivan del perfil de usuario objetivo y se fundamentan en
 | ID | Atributo de Usabilidad | Descripción / Criterio de Aceptación | RFs Relacionados | Heurística Nielsen |
 |---|---|---|---|---|
 | RNF-01 | Legibilidad — Tamaño de fuente | Tamaño mínimo de fuente **16pt** en toda la interfaz. Encabezados ≥ 20pt. Sin texto menor a 14pt en ningún elemento. | Todos los RF | H8 — Estética y diseño minimalista |
-| RNF-02 | Accesibilidad táctil | Áreas táctiles mínimas de **48×48 dp** para todos los botones e ítems interactivos. Sin botones de menos de 9mm de alto. | Todos los RF | H7 — Flexibilidad y eficiencia |
+| RNF-02 | Área clicable mínima | Área clicable mínima de **44×44 px** para todos los botones e ítems interactivos. Espaciado suficiente entre elementos adyacentes para evitar clics accidentales con ratón. | Todos los RF | H7 — Flexibilidad y eficiencia |
 | RNF-03 | Contraste visual | Relación de contraste mínima de **4.5:1 (WCAG AA)** entre texto y fondo. Nunca usar gris claro sobre blanco. | Todos los RF | H8 — Estética y diseño minimalista |
 | RNF-04 | Mensajes de error claros | Mensajes en lenguaje cotidiano, sin códigos de error, con indicación clara de qué hacer. Máximo 2 oraciones. | RF01, RF02, RF03 | H9 — Ayuda a reconocer y recuperarse de errores |
 | RNF-05 | Reconocimiento sobre recuerdo | Todas las opciones visibles; nunca depender de que el usuario recuerde rutas. Breadcrumbs visibles en navegación. | RF05, RF10, RF20, RF30 | H6 — Reconocimiento sobre recuerdo |
-| RNF-06 | Tiempo de respuesta | Carga ≤ **3 segundos** en redes 3G típicas. Indicador de carga visible si la operación tarda más de 1 segundo. | RF10, RF20, RF30 | H1 — Visibilidad del estado del sistema |
+| RNF-06 | Tiempo de respuesta | Carga ≤ **3 segundos** en conexiones de escritorio con ancho de banda básico (≥ 5 Mbps). Indicador de carga visible si la operación tarda más de 1 segundo. | RF10, RF20, RF30 | H1 — Visibilidad del estado del sistema |
 | RNF-07 | Flujos cortos | El número de pasos para completar cualquier tarea de consulta no debe superar **3 interacciones** desde el menú principal. | RF10, RF20, RF30 | H7 — Flexibilidad y eficiencia |
 | RNF-08 | Prevención de errores | Botones destructivos deben incluir confirmación explícita. Formularios validan en tiempo real antes del envío. | RF01, RF02, RF04 | H5 — Prevención de errores |
 | RNF-09 | Soporte humano visible | Número de contacto de RRHH **siempre visible** en el menú principal y en pantallas de error. Alternativa analógica siempre presente. | RF05, pantallas de error RF01–RF03 | H10 — Ayuda y documentación |
 | RNF-10 | Consistencia visual | Mismo esquema de color, tipografía, iconografía y patrones de interacción en toda la aplicación. Mismos términos para mismos conceptos. | Todos los RF | H4 — Consistencia y estándares |
-| RNF-11 | Compatibilidad de dispositivos | Funciona correctamente en dispositivos **Android 8.0+** con pantallas de 5–6 pulgadas y resolución mínima 720×1280px. | Todos los RF | H7 — Flexibilidad y eficiencia |
+| RNF-11 | Compatibilidad de navegadores y escritorio | Funciona correctamente en navegadores modernos de escritorio (**Chrome 90+, Firefox 90+, Edge 90+**) con resoluciones de pantalla desde **1280×720 px**. Diseño *desktop-first*; no se contempla soporte para dispositivos móviles. | Todos los RF | H7 — Flexibilidad y eficiencia |
 | RNF-12 | Tasa de éxito de tareas | ≥ **80%** de usuarios del perfil objetivo completan cada tarea sin asistencia. Tiempo en tareas de consulta ≤ **90 segundos**. | RF10, RF20, RF30 | ISO 9241-11 — Eficacia |
 
 ---
@@ -267,7 +268,7 @@ Los siguientes RNF se derivan del perfil de usuario objetivo y se fundamentan en
 
 Matriz de criticidad: **✓✓** = Crítico para este RF | **✓** = Relevante para este RF
 
-| RF | Legibilidad | Táctil | Contraste | Errores | Reconoc. | Flujos Cortos | Soporte Visible | Prevención |
+| RF | Legibilidad | Área Clicable | Contraste | Errores | Reconoc. | Flujos Cortos | Soporte Visible | Prevención |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | RF01 | ✓✓ | ✓✓ | ✓ | ✓✓ | ✓ | ✓✓ | ✓ | ✓✓ |
 | RF02 | ✓✓ | ✓✓ | ✓ | ✓✓ | ✓ | ✓✓ | ✓✓ | ✓✓ |
