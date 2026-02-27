@@ -111,35 +111,36 @@ Principalmente RF01 (registro con múltiples campos — punto de mayor fricción
 
 ---
 
-### Proto-Persona 3 — "Don Mauricio"
+### Proto-Persona 3 — "Don Feliciano"
 
-> *Jubilado con algo más de experiencia digital, pero que enfrenta barreras visuales*
+> *Jubilado de servicios generales sin experiencia previa con computadoras; primer contacto con el sistema digital*
 
 | Campo | Detalle |
 |---|---|
-| **Nombre** | Mauricio Sansores Herrera |
-| **Edad** | 71 años |
-| **Ocupación previa** | Técnico de laboratorio, Facultad de Medicina, UADY (32 años de servicio) |
-| **Lugar de residencia** | Mérida, Yucatán |
-| **Dispositivo** | Computadora de escritorio; monitor de 24" con resolución aumentada |
-| **Conexión** | Internet en casa |
-| **Competencia digital** | Media — usó computadora durante toda su vida laboral para registro de datos; sabe navegar en internet pero no está familiarizado con plataformas institucionales recientes |
+| **Nombre** | Feliciano Canul Tzuc |
+| **Edad** | 69 años |
+| **Ocupación previa** | Personal de mantenimiento y servicios generales, Campus de Ciencias Exactas, UADY (30 años de servicio) |
+| **Lugar de residencia** | Municipio de Kanasín, Yucatán |
+| **Dispositivo** | No tiene computadora propia; accede desde la computadora de un vecino o en una tienda de servicios de impresión |
+| **Conexión** | No tiene internet en casa; usa datos móviles limitados en su teléfono básico |
+| **Competencia digital** | Muy baja — nunca usó computadora durante su vida laboral; su uso del teléfono se limita a llamadas y recibir fotos por WhatsApp |
 
 **Objetivos:**
-- Revisar sus aportaciones al Fondo de Ahorro para el Retiro cada mes
-- Descargar su CFDI en PDF sin necesitar ayuda
-- Que el sistema funcione bien con el tamaño de letra aumentado que usa en su computadora
+- Obtener sus recibos de nómina (CFDI) para presentarlos en un trámite del IMSS
+- No tener que viajar hasta las instalaciones de la UADY en Mérida para conseguir un papel
+- Poder completar el proceso con la ayuda de alguien de confianza presente en el mismo lugar
 
 **Frustraciones:**
-- Muchas plataformas institucionales rompen su diseño cuando aumenta el zoom del navegador
-- Ha intentado acceder al sistema anterior pero los mensajes de error no indican claramente qué debe corregir
-- Los correos de confirmación de registro a veces llegan a correo no deseado y no sabe cómo encontrarlos
+- Nunca ha creado una cuenta en ninguna plataforma digital; no entiende qué es un "usuario" ni una "contraseña"
+- El RFC y la CURP los tiene escritos en documentos físicos en casa; no los tiene de memoria ni digitalizados
+- Siente que el proceso es "para gente que sabe de computadoras" y duda en intentarlo sin asistencia presencial
+- No tiene correo electrónico y no sabe cómo crear uno, lo cual bloquea por completo el registro
 
 **Cita representativa:**  
-*"Sí sé usar la computadora, pero los sistemas de la universidad siempre tienen algo que no funciona como esperas. Le sodo zoom a todo y luego los botones desaparecen."*
+*"Eso de las contraseñas y los correos no es lo mío. Si alguien me enseña paso a paso, quizá puedo. Pero solo no me arriesgo a hacer algo mal."*
 
 **Relación con requerimientos:**  
-Principalmente RF02 (recuperar contraseña — correo de confirmación), RF05 (menú principal — accesibilidad visual), RF10 (consulta de CFDI), RF20 (FAR).
+Principalmente RF01 (registro — barrera más alta para este perfil: correo electrónico requerido, RFC, CURP, CAPTCHA), RF02 (recuperar contraseña — sin acceso autónomo a correo), RF03 (inicio de sesión — primer uso del sistema).
 
 ---
 
@@ -147,10 +148,12 @@ Principalmente RF02 (recuperar contraseña — correo de confirmación), RF05 (m
 
 | Patrón | Presente en |
 |---|---|
-| Dificultad con contraseñas y credenciales | Don Armando, Doña Concepción, Don Mauricio |
-| Dependencia de apoyo externo (familiar o CGRH) | Doña Concepción, Don Armando |
-| Necesidad de tipografía aumentada y baja densidad informativa | Don Mauricio, Don Armando |
-| Terminología técnica como barrera (RFC, CURP, CAPTCHA, XML) | Don Armando, Doña Concepción |
+| Dificultad con contraseñas y credenciales | Don Armando, Doña Concepción, Don Feliciano |
+| Dependencia de apoyo externo (familiar o CGRH) | Doña Concepción, Don Feliciano |
+| Terminología técnica como barrera (RFC, CURP, CAPTCHA, XML) | Don Armando, Doña Concepción, Don Feliciano |
+| Sin acceso propio a correo electrónico | Don Feliciano |
+| Sin dispositivo o conexión propios | Don Feliciano |
+| Necesidad de tipografía aumentada y baja densidad informativa | Don Armando, Doña Concepción |
 | Uso esporádico que incrementa la curva de memoria | Los tres perfiles |
 | Canal principal: escritorio | Los tres perfiles |
 
