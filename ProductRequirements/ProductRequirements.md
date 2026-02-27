@@ -116,7 +116,7 @@ El sistema contempla 8 requerimientos funcionales agrupados en dos categorías d
 
 ---
 
-### 3.3 RF03 — Iniciar Sesión 🔴 Alta Fricción
+### 3.3 RF03 — Iniciar Sesión - Alta Fricción
 
 | Campo | Detalle |
 |---|---|
