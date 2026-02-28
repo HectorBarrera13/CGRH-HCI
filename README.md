@@ -20,10 +20,10 @@ The HCI project focuses specifically on **retired UADY employees over 60 years o
 
 | Member | GitHub |
 |---|---|
-| Héctor Castro | [@hectorcastlz](https://github.com/hectorcastlz) |
+| Héctor Castro | [@hectorcast44](https://github.com/hectorcast44) |
 | Héctor Barrera | [@HectorBarrera13](https://github.com/HectorBarrera13) |
-| Rodrigo Alonzo | [AlonPal9](https://github.com/AlonPal9)  |
-| Damián Villares | [DamianVM1](https://github.com/DamianVM1) |
+| Rodrigo Alonzo | [@AlonPal9](https://github.com/AlonPal9)  |
+| Damián Villares | [@DamianVM1](https://github.com/DamianVM1) |
 
 ---
 
@@ -64,13 +64,13 @@ Functional_Requirements/            # RF specification documents (.docx)
 
 ## Methodology
 
-The project follows **User-Centered Design (UCD)** across four iterative phases:
+The project follows **User-Centered Design (UCD)** across four phases:
 
 1. Understand and specify the context of use
 2. Specify user and organizational requirements
 3. Produce design solutions
 4. Evaluate designs against requirements
 
-Each course delivery corresponds to a UCD phase, building progressively on the previous one. All design decisions are traceable to research findings, requirements, or established HCI principles.
+Each delivery corresponds to a UCD phase, building progressively on the previous one. All design decisions are traceable to research findings, requirements, or established HCI principles.
 
 ---
