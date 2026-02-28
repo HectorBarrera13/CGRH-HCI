@@ -1,0 +1,9 @@
+# Usability vs UX
+
+HCI is the broad multidisciplinary and scientific field that studies how people relate with any form of technology, UX is an application of HCI that focuses on the functional and emotional experience we have when interacting with a specific product, and finally Usability is a subset of UX that focuses on measure how easy the interface of the system is to use.
+Usability focuses only on the frustration the system generates while using it, for example, if it is prone to errors or if you need 1 month to learn to use it, while UX also focus on, for example, if it has animations just to make it prettier, or if it is quick so the user won't wait, etc.
+Taking as example the UX feature "visualize the status of an exemption", the verification method would be observe if the target user can tell and understands how their request is going in a lapse of 10 seconds.
+
+In contrast, if we were to evaluate the same feature from a usability perspective, we would focus on whether the status information is presented in a clear and unambiguous way, meaning, if the user can interpret it without making errors or needing prior training. For instance, if the status labels are confusing or the interface requires the user to navigate through multiple screens just to find where their request stands, that would be a usability problem regardless of how visually appealing the design is.
+
+This distinction matters because a system can have great UX in terms of aesthetics and emotional response, but still have poor usability if users constantly make mistakes or feel lost. On the other hand, a system can be highly usable, efficient and error-free, but still deliver a bad overall UX if it feels slow, cold or unintuitive on an emotional level. Both dimensions need to be considered together to build a product that is not only functional but also enjoyable to use.
