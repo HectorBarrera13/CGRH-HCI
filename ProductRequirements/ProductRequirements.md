@@ -1,274 +1,274 @@
-# Punto 4 — Requerimientos del Producto
+# Point 4 — Product Requirements
 
-**Universidad Autónoma de Yucatán — Facultad de Matemáticas | Ingeniería en Software**  
-**Entregable HCI — Sistema CGRH (Coordinación General de Recursos Humanos)**  
-*Enfocado en usuarios adultos mayores jubilados (60+ años) — Mérida, Yucatán, 2026*
-
----
-
-## Tabla de Contenidos
-
-1. [Introducción y Contexto del Sistema](#1-introducción-y-contexto-del-sistema)
-2. [Resumen de Requerimientos Funcionales](#2-resumen-de-requerimientos-funcionales)
-3. [Requerimientos Funcionales — Descripción Detallada](#3-requerimientos-funcionales--descripción-detallada)
-   - [RF01 — Registro de Empleado](#31-rf01--registro-de-empleado--alta-fricción)
-   - [RF02 — Recuperar Contraseña](#32-rf02--recuperar-contraseña--alta-fricción)
-   - [RF03 — Iniciar Sesión](#33-rf03--iniciar-sesión--alta-fricción)
-   - [RF04 — Finalizar Sesión](#34-rf04--finalizar-sesión)
-   - [RF05 — Menú Principal](#35-rf05--menú-principal)
-   - [RF10 — Consultar CFDIs](#36-rf10--consultar-cfdis--alta-frecuencia)
-   - [RF20 — Fondo de Ahorro para el Retiro](#37-rf20--fondo-de-ahorro-para-el-retiro--alta-frecuencia)
-   - [RF30 — Caja de Ahorro](#38-rf30--caja-de-ahorro--alta-frecuencia)
-4. [Requerimientos No Funcionales de Usabilidad](#4-requerimientos-no-funcionales-de-usabilidad)
-5. [Relación RF — RNF](#5-relación-rf--rnf)
-6. [Criterios de Aceptación Globales (HCI)](#6-criterios-de-aceptación-globales-hci)
-7. [Referencias](#7-referencias)
+**Universidad Autónoma de Yucatán — Faculty of Mathematics | Software Engineering**  
+**HCI Deliverable — CGRH System (General Coordination of Human Resources)**  
+*Mérida, Yucatán, 2026*
 
 ---
 
-## 1. Introducción y Contexto del Sistema
+## Table of Contents
 
-El Sistema CGRH (Coordinación General de Recursos Humanos) de la Universidad Autónoma de Yucatán es una plataforma digital de autoservicio que permite a empleados y jubilados UADY consultar sus prestaciones económicas: recibos de nómina (CFDI), Fondo de Ahorro para el Retiro (FAR) y Caja de Ahorro.
-
-El contexto de uso más crítico desde la perspectiva de HCI involucra a **empleados jubilados mayores de 60 años** con nivel básico de alfabetización digital, acceso predominante desde dispositivos Android básicos y posibles limitaciones visuales y cognitivas. Este perfil define las prioridades de diseño de todos los requerimientos aquí descritos.
-
-> 💡 **Usuarios objetivo primarios:** Jubilados UADY, 60+ años, alfabetización digital básica, dispositivos Android de gama baja.
-> La inclusión digital de este grupo no es solo un objetivo de usabilidad — es una cuestión de **acceso a derechos y autonomía financiera**.
+1. [Introduction and System Context](#1-introduction-and-system-context)
+2. [Functional Requirements Summary](#2-functional-requirements-summary)
+3. [Functional Requirements — Detailed Description](#3-functional-requirements--detailed-description)
+   - [RF01 — Employee Registration](#31-rf01--employee-registration--high-friction)
+   - [RF02 — Password Recovery](#32-rf02--password-recovery--high-friction)
+   - [RF03 — Login](#33-rf03--login--high-friction)
+   - [RF04 — Logout](#34-rf04--logout)
+   - [RF05 — Main Menu](#35-rf05--main-menu)
+   - [RF10 — Consult CFDIs](#36-rf10--consult-cfdis--high-frequency)
+   - [RF20 — Retirement Savings Fund](#37-rf20--retirement-savings-fund--high-frequency)
+   - [RF30 — Savings Fund](#38-rf30--savings-fund--high-frequency)
+4. [Non-Functional Usability Requirements](#4-non-functional-usability-requirements)
+5. [RF — NFR Relationship](#5-rf--nfr-relationship)
+6. [Global Acceptance Criteria (HCI)](#6-global-acceptance-criteria-hci)
+7. [References](#7-references)
 
 ---
 
-## 2. Resumen de Requerimientos Funcionales
+## 1. Introduction and System Context
 
-El sistema contempla 8 requerimientos funcionales agrupados en dos categorías desde la perspectiva HCI:
+The CGRH System (General Coordination of Human Resources) of the Universidad Autónoma de Yucatán is a digital self-service platform that allows **all active and retired UADY employees** to consult their financial information: payroll receipts (CFDI), Retirement Savings Fund (FAR), and Savings Fund.
 
-- **Autenticación y acceso (RF01–RF05):** Puntos de mayor fricción para el usuario objetivo.
-- **Consulta de prestaciones (RF10, RF20, RF30):** Mayor frecuencia de uso y valor directo para el jubilado.
+For the purposes of this HCI analysis — framed as an academic subproject — the context of use of greatest interest involves **retired employees over 60 years of age** with a basic level of digital literacy, predominant access from low-end desktop computers, and possible visual and cognitive limitations. This profile defines the design priorities for all requirements described here, under the premise that criteria derived from the highest-friction segment benefit the system as a whole.
 
-| ID | Nombre | Prioridad HCI | Datos Involucrados | Nivel de Fricción (usuario 60+) |
+> **System users:** All active and retired UADY employees.  
+> **HCI analysis segment (academic subproject):** UADY retirees, 60+ years old, basic digital literacy, low-end desktop computers.
+
+---
+
+## 2. Functional Requirements Summary
+
+The system includes 8 functional requirements grouped into two categories from an HCI perspective:
+
+- **Authentication and access (RF01–RF05):** Points of greatest friction for the target user.
+- **Benefits consultation (RF10, RF20, RF30):** Highest frequency of use and direct value for the retiree.
+
+| ID | Name | HCI Priority | Data Involved | Friction Level (60+ user) |
 |---|---|---|---|---|
-| RF01 | Registro de Empleado | Alta | Clave, RFC, CURP, correo institucional, contraseña, teléfono | 🔴 **Alto** — múltiples campos, CAPTCHA, flujo en 2 pasos |
-| RF02 | Recuperar Contraseña | Alta | Correo institucional → enlace temporal → nueva contraseña | 🔴 **Alto** — memoria de credenciales, gestión de correo |
-| RF03 | Iniciar Sesión | Alta | Usuario + contraseña → acceso al sistema | 🔴 **Alto** — punto de entrada, bloqueo = sin acceso a todo |
-| RF04 | Finalizar Sesión | Media | Botón de cerrar sesión en menú | 🟡 **Bajo** — acción clara y visible |
-| RF05 | Menú Principal | Alta | Vista de opciones disponibles tras login | 🟡 **Medio** — navegación y orientación del usuario |
-| RF10 | Consultar CFDI | Muy Alta | Lista de recibos con filtros, descarga PDF/XML | 🟡 **Medio** — lectura de datos financieros, descarga |
-| RF20 | Fondo de Ahorro para el Retiro | Muy Alta | Tarjeta con saldos, aportaciones, rendimientos, descarga PDF | 🟡 **Medio** — información financiera crítica |
-| RF30 | Caja de Ahorro | Muy Alta | Resumen de cuenta de caja de ahorro, descarga PDF | 🟡 **Medio** — información financiera crítica |
+| RF01 | Employee Registration | High | Employee ID, RFC, CURP, institutional email, password, phone | **High** — multiple fields, CAPTCHA, 2-step flow |
+| RF02 | Password Recovery | High | Institutional email → temporary link → new password | **High** — credential memory, email management |
+| RF03 | Login | High | Username + password → system access | **High** — entry point, failure = no access to anything |
+| RF04 | Logout | Medium | Logout button in menu | **Low** — clear and visible action |
+| RF05 | Main Menu | High | View of available options after login | **Medium** — navigation and user orientation |
+| RF10 | Consult CFDI | Very High | List of receipts with filters, PDF/XML download | **Medium** — reading financial data, download |
+| RF20 | Retirement Savings Fund | Very High | Card with balances, contributions, returns, PDF download | **Medium** — critical financial information |
+| RF30 | Savings Fund | Very High | Savings account summary, PDF download | **Medium** — critical financial information |
 
-> ⚠️ **Nota:** Los requerimientos RF01, RF02 y RF03 representan los **puntos de mayor fricción** para el usuario de 60+ años. Un fallo en cualquiera de estos bloquea el acceso a toda la plataforma.
-
----
-
-## 3. Requerimientos Funcionales — Descripción Detallada
+> **Note:** Requirements RF01, RF02, and RF03 represent the **points of greatest friction** for the 60+ user. A failure in any of these blocks access to the entire platform.
 
 ---
 
-### 3.1 RF01 — Registro de Empleado 🔴 Alta Fricción
+## 3. Functional Requirements — Detailed Description
 
-| Campo | Detalle |
+---
+
+### 3.1 RF01 — Employee Registration - High Friction
+
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY |
-| **Descripción** | El empleado podrá registrarse a la plataforma para consultar sus documentos de nómina, fondos y administrar sus prestaciones. |
-| **Precondición** | El usuario tiene acceso a internet, conoce su correo institucional UADY, RFC y CURP. |
+| **Actor** | UADY Employee / Retiree |
+| **Description** | The employee will be able to register on the platform to consult their payroll documents, funds, and manage their benefits. |
+| **Precondition** | The user has internet access, knows their UADY institutional email, RFC, and CURP. |
 
-**Flujo Principal:**
-1. Usuario accede a la opción de registro.
-2. Sistema muestra formulario — Paso 1: Clave de empleado, RFC, CURP, correo institucional, confirmación de correo, CAPTCHA.
-3. Usuario completa datos y pulsa **"Continuar"**.
-4. Sistema valida y muestra Paso 2: nombre (no editable, recuperado del sistema de nómina), usuario (auto-asignado), contraseña, confirmación, teléfono.
-5. Usuario completa y pulsa **"Registrar"**.
-6. Sistema envía correo de confirmación con enlace.
-7. Usuario confirma y puede iniciar sesión.
+**Main Flow:**
+1. User accesses the registration option.
+2. System displays form — Step 1: Employee ID, RFC, CURP, institutional email, email confirmation, CAPTCHA.
+3. User completes data and clicks **"Continue"**.
+4. System validates and displays Step 2: name (non-editable, retrieved from the payroll system), username (auto-assigned), password, confirmation, phone number.
+5. User completes and clicks **"Register"**.
+6. System sends a confirmation email with a link.
+7. User confirms and can log in.
 
-**Flujos Alternativos:**
-- **Alt. 1:** Correo con formato inválido → mensaje de error en el campo.
-- **Alt. 2:** Enlace de confirmación caducado → mensaje y opción de re-registro.
-- **Alt. 3:** Correos no coinciden → campo en rojo con mensaje descriptivo.
-- **Alt. 4:** Usuario ya registrado → mensaje informativo con enlace a login.
+**Alternative Flows:**
+- **Alt. 1:** Email with invalid format → error message in the field.
+- **Alt. 2:** Expired confirmation link → message and re-registration option.
+- **Alt. 3:** Emails do not match → field highlighted in red with a descriptive message.
+- **Alt. 4:** User already registered → informational message with link to login.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Flujo en 2 pasos necesario pero complejo para adultos mayores. Recomendaciones: instrucciones claras antes de cada campo, indicador de progreso visible ("Paso 1 de 2"), mensajes de error en lenguaje sencillo sin tecnicismos, CAPTCHA accesible, tamaño de fuente mínimo 16pt, botones táctiles grandes (≥ 48×48 dp). Considerar guía visual o tutorial para el primer acceso.
+> **HCI/Usability Considerations:** A 2-step flow is necessary but complex for older adults. Recommendations: clear instructions before each field, visible progress indicator ("Step 1 of 2"), error messages in plain language without technical jargon, accessible CAPTCHA, minimum font size 16pt, buttons with a minimum clickable area of 44×44 px and sufficient spacing to avoid accidental clicks. Consider a visual guide or tutorial for first-time access.
 
 ---
 
-### 3.2 RF02 — Recuperar Contraseña 🔴 Alta Fricción
+### 3.2 RF02 — Password Recovery - High Friction
 
-| Campo | Detalle |
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY registrado |
-| **Descripción** | El empleado registrado que olvidó su contraseña puede recuperar el acceso a través de su correo institucional. |
-| **Precondición** | El usuario está registrado en el sistema y tiene acceso a su correo institucional (@correo.uady.mx). |
+| **Actor** | Registered UADY Employee / Retiree |
+| **Description** | The registered employee who forgot their password can recover access through their institutional email. |
+| **Precondition** | The user is registered in the system and has access to their institutional email (@correo.uady.mx). |
 
-**Flujo Principal:**
-1. Usuario selecciona "¿Recuperar contraseña?" en pantalla de login.
-2. Sistema solicita correo institucional.
-3. Usuario ingresa correo y confirma.
-4. Sistema envía enlace temporal al correo.
-5. Usuario abre el enlace.
-6. Sistema presenta formulario de nueva contraseña.
-7. Usuario crea y confirma nueva contraseña.
-8. Sistema confirma el cambio y redirige al login.
+**Main Flow:**
+1. User selects "Forgot your password?" on the login screen.
+2. System requests institutional email.
+3. User enters email and confirms.
+4. System sends a temporary link to the email.
+5. User opens the link.
+6. System displays a new password form.
+7. User creates and confirms new password.
+8. System confirms the change and redirects to login.
 
-**Flujos Alternativos:**
-- **Alt. 1:** Correo no registrado → mensaje "Correo no encontrado".
-- **Alt. 2:** Enlace caducado → mensaje y opción de reenvío.
-- **Alt. 3:** Nueva contraseña no cumple requisitos → indicación visual de reglas.
+**Alternative Flows:**
+- **Alt. 1:** Unregistered email → message "Email not found".
+- **Alt. 2:** Expired link → message and resend option.
+- **Alt. 3:** New password does not meet requirements → visual indication of rules.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Este es el flujo más crítico del sistema para adultos mayores: implica recordar contraseña, acceder a correo y crear una nueva contraseña compleja. Recomendaciones: mostrar requisitos de contraseña en tiempo real con indicador visual (débil/media/fuerte), permitir ver la contraseña ingresada (ícono ojo), mensajes de error extremadamente claros, tiempo de expiración del enlace no menor a 30 minutos, y siempre mostrar el número de RRHH como alternativa de soporte.
+> **HCI/Usability Considerations:** This is the most critical flow in the system for older adults: it involves remembering a password, accessing email, and creating a new complex password. Recommendations: display password requirements in real time with a visual indicator (weak/medium/strong), allow the user to view the entered password (eye icon), extremely clear error messages, link expiration time of no less than 30 minutes, and always display the HR contact number as a support alternative.
 
 ---
 
-### 3.3 RF03 — Iniciar Sesión 🔴 Alta Fricción
+### 3.3 RF03 — Login - High Friction
 
-| Campo | Detalle |
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY registrado |
-| **Descripción** | El empleado registrado inicia sesión con su usuario y contraseña para acceder al sistema. |
-| **Precondición** | El usuario está registrado en el sistema. |
+| **Actor** | Registered UADY Employee / Retiree |
+| **Description** | The registered employee logs in with their username and password to access the system. |
+| **Precondition** | The user is registered in the system. |
 
-**Flujo Principal:**
-1. Usuario accede a la pantalla de inicio de sesión.
-2. Sistema muestra: logo institucional, campos de usuario y contraseña, botón "Iniciar Sesión" y enlace "¿Recuperar contraseña?".
-3. Usuario ingresa usuario y contraseña.
-4. Sistema valida credenciales.
-5. Sistema muestra el menú principal (RF05).
+**Main Flow:**
+1. User accesses the login screen.
+2. System displays: institutional logo, username and password fields, "Log In" button, and "Forgot your password?" link.
+3. User enters username and password.
+4. System validates credentials.
+5. System displays the main menu (RF05).
 
-**Flujos Alternativos:**
-- **Alt. 1:** Usuario o contraseña incorrectos → mensaje "El usuario o la contraseña son incorrectos", limpia los campos.
-- **Ext. 1:** Usuario selecciona "Recuperar contraseña" → flujo RF02.
+**Alternative Flows:**
+- **Alt. 1:** Incorrect username or password → message "The username or password is incorrect", clears the fields.
+- **Ext. 1:** User selects "Forgot your password?" → RF02 flow.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** El login es la puerta de entrada al sistema. Recomendaciones: campo de usuario pre-llenado si el dispositivo lo permite, botón de mostrar/ocultar contraseña, mensaje de error descriptivo sin revelar qué campo es incorrecto (seguridad), enlace de recuperación muy visible, no bloquear cuenta automáticamente sin aviso previo. Considerar opción "Recordarme" para dispositivos de confianza.
+> **HCI/Usability Considerations:** Login is the gateway to the system. Recommendations: pre-filled username field if the device allows it, show/hide password button, descriptive error message without revealing which field is incorrect (security), recovery link clearly visible, do not lock account automatically without prior warning. Consider a "Remember me" option for trusted devices.
 
 ---
 
-### 3.4 RF04 — Finalizar Sesión
+### 3.4 RF04 — Logout
 
-| Campo | Detalle |
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY con sesión activa |
-| **Descripción** | El empleado puede cerrar su sesión de forma explícita y segura. |
-| **Precondición** | El usuario tiene una sesión activa en el sistema. |
+| **Actor** | UADY Employee / Retiree with an active session |
+| **Description** | The employee can explicitly and securely close their session. |
+| **Precondition** | The user has an active session in the system. |
 
-**Flujo Principal:**
-1. Usuario localiza y selecciona la opción "Cerrar sesión" en el menú.
-2. Sistema invalida la sesión del usuario.
-3. Sistema redirige a la pantalla de inicio de sesión.
+**Main Flow:**
+1. User locates and selects the "Log out" option in the menu.
+2. System invalidates the user's session.
+3. System redirects to the login screen.
 
-**Flujos Alternativos:** Sin flujos alternativos significativos. La sesión también puede expirar por tiempo de inactividad.
+**Alternative Flows:** No significant alternative flows. The session can also expire due to inactivity.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Elemento de cierre de sesión siempre visible y claramente etiquetado como "Cerrar sesión" (no íconos ambiguos). Considerar confirmación antes de cerrar para evitar cierres accidentales. Tiempo de inactividad antes del cierre automático debe ser generoso (mínimo 15 minutos) dado el perfil de usuario.
+> **HCI/Usability Considerations:** The logout element should always be visible and clearly labeled as "Log out" (no ambiguous icons). Consider a confirmation dialog before closing to avoid accidental logouts. Inactivity time before automatic logout should be generous (minimum 15 minutes) given the user profile.
 
 ---
 
-### 3.5 RF05 — Menú Principal
+### 3.5 RF05 — Main Menu
 
-| Campo | Detalle |
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY autenticado |
-| **Descripción** | Tras el inicio de sesión, el usuario ve el menú principal que le da acceso a todas las funciones disponibles. |
-| **Precondición** | El usuario ha iniciado sesión exitosamente (RF03). |
+| **Actor** | Authenticated UADY Employee / Retiree |
+| **Description** | After logging in, the user sees the main menu that provides access to all available functions. |
+| **Precondition** | The user has successfully logged in (RF03). |
 
-**Flujo Principal:**
-1. Sistema muestra pantalla principal con las opciones disponibles: CFDI, Fondo de Ahorro para el Retiro, Caja de Ahorro.
-2. Usuario selecciona la opción deseada.
-3. Sistema navega a la sección correspondiente.
+**Main Flow:**
+1. System displays the main screen with available options: CFDI, Retirement Savings Fund, Savings Fund.
+2. User selects the desired option.
+3. System navigates to the corresponding section.
 
-**Flujos Alternativos:** Sin flujos alternativos. El menú es el punto de distribución principal.
+**Alternative Flows:** No alternative flows. The menu is the main distribution point.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Punto de orientación clave. Recomendaciones: máximo 4–5 opciones visibles para evitar sobrecarga cognitiva, íconos representativos acompañados **siempre** de texto descriptivo, jerarquía visual clara, bienvenida personalizada con nombre del usuario, y número de soporte de RRHH siempre visible en esta pantalla.
+> **HCI/Usability Considerations:** Key orientation point for the user. Recommendations: maximum 4–5 visible options to avoid cognitive overload, representative icons **always** accompanied by descriptive text, clear visual hierarchy, personalized welcome with the user's name, and HR support number always visible on this screen.
 
 ---
 
-### 3.6 RF10 — Consultar CFDIs 🟡 Alta Frecuencia
+### 3.6 RF10 — Consult CFDIs - High Frequency
 
-| Campo | Detalle |
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY autenticado |
-| **Descripción** | El empleado puede visualizar y descargar sus Comprobantes Fiscales Digitales por Internet (recibos de nómina). |
-| **Precondición** | El usuario ha iniciado sesión. El sistema cuenta con CFDIs del empleado. |
+| **Actor** | Authenticated UADY Employee / Retiree |
+| **Description** | The employee can view and download their Digital Tax Receipts via the Internet (payroll receipts). |
+| **Precondition** | The user has logged in. The system has CFDIs for the employee. |
 
-**Flujo Principal:**
-1. Usuario selecciona "CFDI" en menú principal.
-2. Sistema muestra tabla con CFDIs del mes/año actual: folio, departamento, quincena, fechas de pago, días pagados, botones de descarga (PDF/XML).
-3. Filtros disponibles: año y mes de fecha de pago.
-4. Usuario puede descargar PDF individual, XML individual, o seleccionar varios/todos para descarga masiva (.zip).
-5. Sistema genera y descarga el archivo solicitado.
+**Main Flow:**
+1. User selects "CFDI" in the main menu.
+2. System displays a table with CFDIs for the current month/year: folio, department, pay period, payment dates, days paid, download buttons (PDF/XML).
+3. Available filters: year and month of payment date.
+4. User can download individual PDF, individual XML, or select several/all for bulk download (.zip).
+5. System generates and downloads the requested file.
 
-**Flujos Alternativos:**
-- **Alt. 1:** Sin filtros aplicados → muestra todos los CFDIs del año actual.
-- **Alt. 2:** Usuario cancela descarga del .zip → sistema cierra la ventana de guardado.
+**Alternative Flows:**
+- **Alt. 1:** No filters applied → displays all CFDIs for the current year.
+- **Alt. 2:** User cancels the .zip download → system closes the save dialog.
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Función de mayor uso del sistema. Recomendaciones: mostrar primero el CFDI más reciente, usar términos familiares ("Recibo de Nómina" junto a "CFDI"), botones de descarga PDF grandes y visibles (PDF es más familiar que XML para adultos mayores), filtros simples con listas desplegables, paginación clara con números de página visibles, etiquetas de quincena en formato comprensible ("1a quincena enero" no solo "01/01/2026").
+> **HCI/Usability Considerations:** Most frequently used function in the system. Recommendations: display the most recent CFDI first, use familiar terms ("Payroll Receipt" alongside "CFDI"), large and visible PDF download buttons (PDF is more familiar than XML for older adults), simple filters with dropdown lists, clear pagination with visible page numbers, pay period labels in a readable format ("1st pay period, January" not just "01/01/2026").
 
 ---
 
-### 3.7 RF20 — Fondo de Ahorro para el Retiro 🟡 Alta Frecuencia
+### 3.7 RF20 — Retirement Savings Fund - High Frequency
 
-| Campo | Detalle |
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY autenticado |
-| **Descripción** | El empleado puede ver un resumen de su cuenta del Fondo de Ahorro para el Retiro (FAR) administrado por Banco Santander. |
-| **Precondición** | El usuario ha iniciado sesión. El sistema tiene datos del FAR del empleado (cargados por RRHH). |
+| **Actor** | Authenticated UADY Employee / Retiree |
+| **Description** | The employee can view a summary of their Retirement Savings Fund (FAR) account managed by Banco Santander. |
+| **Precondition** | The user has logged in. The system has FAR data for the employee (loaded by HR). |
 
-**Flujo Principal:**
-1. Usuario selecciona "Fondo de Ahorro para el Retiro".
-2. Sistema muestra tarjeta con:
-   - Datos generales: clave y nombre del empleado, fecha del último reporte.
-   - Resumen financiero: Saldo inicial, Aportaciones, Retiros, Rendimientos, Saldo Final, Derechos Adquiridos.
-   - Nota sobre Banco Santander.
-   - Botón "Descargar" reporte PDF.
-3. Usuario puede descargar el reporte completo en PDF.
+**Main Flow:**
+1. User selects "Retirement Savings Fund".
+2. System displays a card with:
+   - General data: employee ID and name, date of the last report.
+   - Financial summary: Opening Balance, Contributions, Withdrawals, Returns, Closing Balance, Vested Rights.
+   - Note about Banco Santander.
+   - "Download" PDF report button.
+3. User can download the full report in PDF.
 
-**Flujos Alternativos:** Sin flujos alternativos (datos son de solo lectura).
+**Alternative Flows:** No alternative flows (data is read-only).
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Información financiera de alto valor emocional para el jubilado. Recomendaciones: presentar el Saldo Final de forma prominente en tipografía grande, usar tarjeta bien delimitada visualmente, explicar brevemente cada concepto ("Rendimientos: intereses generados por tu ahorro"), indicar claramente la fecha del dato para evitar confusión sobre vigencia, botón de descarga PDF grande y claramente etiquetado.
+> **HCI/Usability Considerations:** Financially and emotionally high-value information for the retiree. Recommendations: display the Closing Balance prominently in large typography, use a visually well-defined card layout, briefly explain each concept ("Returns: interest generated by your savings"), clearly indicate the date of the data to avoid confusion about its validity, large PDF download button clearly labeled.
 
 ---
 
-### 3.8 RF30 — Caja de Ahorro 🟡 Alta Frecuencia
+### 3.8 RF30 — Savings Fund - High Frequency
 
-| Campo | Detalle |
+| Field | Detail |
 |---|---|
-| **Actor** | Empleado / Jubilado UADY autenticado |
-| **Descripción** | El empleado puede ver el resumen de su cuenta de Caja de Ahorro. |
-| **Precondición** | El usuario ha iniciado sesión. El sistema tiene datos de caja de ahorro del empleado. |
+| **Actor** | Authenticated UADY Employee / Retiree |
+| **Description** | The employee can view a summary of their Savings Fund account. |
+| **Precondition** | The user has logged in. The system has savings fund data for the employee. |
 
-**Flujo Principal:**
-1. Usuario selecciona "Caja de Ahorro".
-2. Sistema muestra tarjeta con resumen de la cuenta: datos del empleado, saldos, movimientos del período.
-3. Usuario puede descargar reporte en PDF.
+**Main Flow:**
+1. User selects "Savings Fund".
+2. System displays a card with an account summary: employee data, balances, movements for the period.
+3. User can download a report in PDF.
 
-**Flujos Alternativos:** Sin flujos alternativos (datos son de solo lectura).
+**Alternative Flows:** No alternative flows (data is read-only).
 
-> 🎯 **Consideraciones HCI/Usabilidad:** Mismas consideraciones que RF20. Presentación visual clara con énfasis en saldo actual y descarga de reporte. La **consistencia visual con RF20** es importante para reducir la curva de aprendizaje del usuario.
+> **HCI/Usability Considerations:** Same considerations as RF20. Clear visual presentation with emphasis on the current balance and report download. **Visual consistency with RF20** is important to reduce the user's learning curve.
 
 ---
 
-## 4. Requerimientos No Funcionales de Usabilidad
+## 4. Non-Functional Usability Requirements
 
-Los siguientes RNF se derivan del perfil de usuario objetivo y se fundamentan en los principios heurísticos de Nielsen (1994) y la norma ISO 9241-11:2018. Se priorizan cuatro dimensiones: **accesibilidad visual, legibilidad, carga cognitiva y confianza/soporte**.
+The following NFRs are derived from the target user profile and are grounded in Nielsen's usability heuristics (1994) and the ISO 9241-11:2018 standard. Four dimensions are prioritized: **visual accessibility, readability, cognitive load, and trust/support**.
 
-| ID | Atributo de Usabilidad | Descripción / Criterio de Aceptación | RFs Relacionados | Heurística Nielsen |
+| ID | Usability Attribute | Description / Acceptance Criterion | Related RFs | Nielsen Heuristic |
 |---|---|---|---|---|
-| RNF-01 | Legibilidad — Tamaño de fuente | Tamaño mínimo de fuente **16pt** en toda la interfaz. Encabezados ≥ 20pt. Sin texto menor a 14pt en ningún elemento. | Todos los RF | H8 — Estética y diseño minimalista |
-| RNF-02 | Accesibilidad táctil | Áreas táctiles mínimas de **48×48 dp** para todos los botones e ítems interactivos. Sin botones de menos de 9mm de alto. | Todos los RF | H7 — Flexibilidad y eficiencia |
-| RNF-03 | Contraste visual | Relación de contraste mínima de **4.5:1 (WCAG AA)** entre texto y fondo. Nunca usar gris claro sobre blanco. | Todos los RF | H8 — Estética y diseño minimalista |
-| RNF-04 | Mensajes de error claros | Mensajes en lenguaje cotidiano, sin códigos de error, con indicación clara de qué hacer. Máximo 2 oraciones. | RF01, RF02, RF03 | H9 — Ayuda a reconocer y recuperarse de errores |
-| RNF-05 | Reconocimiento sobre recuerdo | Todas las opciones visibles; nunca depender de que el usuario recuerde rutas. Breadcrumbs visibles en navegación. | RF05, RF10, RF20, RF30 | H6 — Reconocimiento sobre recuerdo |
-| RNF-06 | Tiempo de respuesta | Carga ≤ **3 segundos** en redes 3G típicas. Indicador de carga visible si la operación tarda más de 1 segundo. | RF10, RF20, RF30 | H1 — Visibilidad del estado del sistema |
-| RNF-07 | Flujos cortos | El número de pasos para completar cualquier tarea de consulta no debe superar **3 interacciones** desde el menú principal. | RF10, RF20, RF30 | H7 — Flexibilidad y eficiencia |
-| RNF-08 | Prevención de errores | Botones destructivos deben incluir confirmación explícita. Formularios validan en tiempo real antes del envío. | RF01, RF02, RF04 | H5 — Prevención de errores |
-| RNF-09 | Soporte humano visible | Número de contacto de RRHH **siempre visible** en el menú principal y en pantallas de error. Alternativa analógica siempre presente. | RF05, pantallas de error RF01–RF03 | H10 — Ayuda y documentación |
-| RNF-10 | Consistencia visual | Mismo esquema de color, tipografía, iconografía y patrones de interacción en toda la aplicación. Mismos términos para mismos conceptos. | Todos los RF | H4 — Consistencia y estándares |
-| RNF-11 | Compatibilidad de dispositivos | Funciona correctamente en dispositivos **Android 8.0+** con pantallas de 5–6 pulgadas y resolución mínima 720×1280px. | Todos los RF | H7 — Flexibilidad y eficiencia |
-| RNF-12 | Tasa de éxito de tareas | ≥ **80%** de usuarios del perfil objetivo completan cada tarea sin asistencia. Tiempo en tareas de consulta ≤ **90 segundos**. | RF10, RF20, RF30 | ISO 9241-11 — Eficacia |
+| NFR-01 | Readability — Font size | Minimum font size of **16pt** throughout the interface. Headings ≥ 20pt. No text smaller than 14pt in any element. | All RFs | H8 — Aesthetic and minimalist design |
+| NFR-02 | Minimum clickable area | Minimum clickable area of **44×44 px** for all buttons and interactive items. Sufficient spacing between adjacent elements to avoid accidental clicks with a mouse. | All RFs | H7 — Flexibility and efficiency |
+| NFR-03 | Visual contrast | Minimum contrast ratio of **4.5:1 (WCAG AA)** between text and background. Never use light grey on white. | All RFs | H8 — Aesthetic and minimalist design |
+| NFR-04 | Clear error messages | Messages in everyday language, without error codes, with a clear indication of what to do. Maximum 2 sentences. | RF01, RF02, RF03 | H9 — Help users recognize, diagnose, and recover from errors |
+| NFR-05 | Recognition over recall | All options visible; never rely on the user remembering navigation paths. Breadcrumbs visible in navigation. | RF05, RF10, RF20, RF30 | H6 — Recognition rather than recall |
+| NFR-06 | Response time | Load ≤ **3 seconds** on desktop connections with basic bandwidth (≥ 5 Mbps). Visible loading indicator if the operation takes more than 1 second. | RF10, RF20, RF30 | H1 — Visibility of system status |
+| NFR-07 | Short flows | The number of steps to complete any consultation task must not exceed **3 interactions** from the main menu. | RF10, RF20, RF30 | H7 — Flexibility and efficiency |
+| NFR-08 | Error prevention | Destructive buttons must include explicit confirmation. Forms validate in real time before submission. | RF01, RF02, RF04 | H5 — Error prevention |
+| NFR-09 | Visible human support | HR contact number **always visible** on the main menu and error screens. Analog alternative always present. | RF05, error screens RF01–RF03 | H10 — Help and documentation |
+| NFR-10 | Visual consistency | Same color scheme, typography, iconography, and interaction patterns throughout the application. Same terms for the same concepts. | All RFs | H4 — Consistency and standards |
+| NFR-11 | Browser and desktop compatibility | Works correctly on modern desktop browsers (**Chrome 90+, Firefox 90+, Edge 90+**) with screen resolutions from **1280×720 px**. Desktop-first design; mobile device support is not included. | All RFs | H7 — Flexibility and efficiency |
+| NFR-12 | Task success rate | ≥ **80%** of target profile users complete each task without assistance. Time on consultation tasks ≤ **90 seconds**. | RF10, RF20, RF30 | ISO 9241-11 — Effectiveness |
 
 ---
 
-## 5. Relación RF — RNF
+## 5. RF — NFR Relationship
 
-Matriz de criticidad: **✓✓** = Crítico para este RF | **✓** = Relevante para este RF
+Criticality matrix: **✓✓** = Critical for this RF | **✓** = Relevant for this RF
 
-| RF | Legibilidad | Táctil | Contraste | Errores | Reconoc. | Flujos Cortos | Soporte Visible | Prevención |
+| RF | Readability | Clickable Area | Contrast | Errors | Recognition | Short Flows | Visible Support | Prevention |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | RF01 | ✓✓ | ✓✓ | ✓ | ✓✓ | ✓ | ✓✓ | ✓ | ✓✓ |
 | RF02 | ✓✓ | ✓✓ | ✓ | ✓✓ | ✓ | ✓✓ | ✓✓ | ✓✓ |
@@ -281,29 +281,29 @@ Matriz de criticidad: **✓✓** = Crítico para este RF | **✓** = Relevante p
 
 ---
 
-## 6. Criterios de Aceptación Globales (HCI)
+## 6. Global Acceptance Criteria (HCI)
 
-Los siguientes criterios definen el mínimo de calidad de usabilidad que el sistema debe alcanzar antes de considerarse apto para los usuarios objetivo:
+The following criteria define the minimum usability quality the system must achieve before it can be considered suitable for the target users:
 
-| # | Criterio | Métrica | RF Objetivo |
+| # | Criterion | Metric | Target RF |
 |---|---|---|---|
-| T1 | **Tasa de éxito de tareas** | ≥ 80% de usuarios del perfil objetivo completan cada tarea sin asistencia externa. | Todos |
-| T2 | **Tiempo en tareas de consulta** | ≤ 90 segundos desde el menú principal hasta visualizar el dato clave. | RF10, RF20, RF30 |
-| T3 | **Tasa de abandono** | ≤ 10% en las tareas críticas durante las pruebas de usabilidad. | RF01, RF02, RF03 |
-| T4 | **Puntuación SUS** | ≥ 70 en la escala SUS adaptada con lenguaje simplificado para el perfil objetivo. | Todos |
-| T5 | **Errores de usabilidad severos** | 0 errores de nivel 4–5 (escala Nielsen) en revisión heurística por ≥ 3 evaluadores. | Todos |
-| T6 | **Conformidad WCAG AA** | Contraste mínimo 4.5:1 en todos los elementos de texto. Verificado con herramienta automatizada. | Todos |
+| T1 | **Task success rate** | ≥ 80% of target profile users complete each task without external assistance. | All |
+| T2 | **Time on consultation tasks** | ≤ 90 seconds from the main menu to viewing the key data. | RF10, RF20, RF30 |
+| T3 | **Abandonment rate** | ≤ 10% on critical tasks during usability testing. | RF01, RF02, RF03 |
+| T4 | **SUS score** | ≥ 70 on the SUS scale adapted with simplified language for the target profile. | All |
+| T5 | **Severe usability errors** | 0 level 4–5 errors (Nielsen scale) in heuristic review by ≥ 3 evaluators. | All |
+| T6 | **WCAG AA conformance** | Minimum contrast of 4.5:1 in all text elements. Verified with an automated tool. | All |
 
 ---
 
-## 7. Referencias
+## 7. References
 
 - Nielsen, J. (1994). *10 Usability Heuristics for User Interface Design*. Nielsen Norman Group.
 - ISO 9241-11:2018. *Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts*.
 - WCAG 2.1 — *Web Content Accessibility Guidelines*. W3C, 2018.
 - Brooke, J. (1996). *SUS: A 'quick and dirty' usability scale*. Usability Evaluation in Industry.
-- UADY CGRH — Documentos de requerimientos funcionales RF01–RF30, Sistema de Prestaciones UADY, 2025–2026.
+- UADY CGRH — Functional requirements documents RF01–RF30, UADY Benefits System, 2025–2026.
 
 ---
 
-*Interacción Humano-Computadora — Ingeniería en Software, UADY | 2026*
+*Human-Computer Interaction — Software Engineering, UADY | 2026*
