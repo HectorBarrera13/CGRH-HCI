@@ -9,3 +9,11 @@ As I understand it, UX on the other hand involves a lot more of the "cognitive" 
 In our project, usability can be measured by whether an employee can log in and download their CFDI quickly and without errors. If the process takes less than two minutes and requires no external help, the system is usable. But UX would evaluate whether the employee feels confident or anxious during the process. Even if the task is completed successfully, small text, unclear instructions or technical language could negatively affect their experience.
 
 A UX feature we could include is a guided first-time (or permanent) login assistant with instructions and help messages. The UX attribute would be perceived confidence and reduced cognitive load. This could be measured by comparing login error rates before and after implementation and by applying a short survey. If failed attempts decrease and confidence increases, we would have measurable evidence of improved UX.
+
+---
+
+## References
+
+ACM SIGCHI. (n.d.). *What is HCI?* Retrieved from https://sigchi.org/about/what-is-hci/
+
+International Organization for Standardization. (2018). *ISO 9241-11:2018 — Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts*. ISO.

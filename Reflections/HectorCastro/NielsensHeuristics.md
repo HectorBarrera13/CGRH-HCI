@@ -9,3 +9,13 @@ The heuristics focus on ideas such as providing clear system feedback, maintaini
 With that said, the heuristics have to be complemented by modern frameworks or more specific heuristics (many of which are based on Nielsen's). They do not directly address important modern concerns such as accessibility, ethical design, or user trust in complex and intelligent systems such as those involving AI. These aspects have become more visible as technology plays a larger role in our everyday life.
 
 In conclusion, Nielsen's usability heuristics are still valid and useful, but they should not be treated as a final solution. They work best as general guiding principles that must be adapted and combined with newer perspectives to fully address the challenges of contemporary interactive systems.
+
+---
+
+## References
+
+Nielsen, J. (1994). Heuristic evaluation. In J. Nielsen & R. L. Mack (Eds.), *Usability inspection methods* (pp. 25–62). John Wiley & Sons.
+
+Norman, D. A. (2013). *The design of everyday things: Revised and expanded edition*. Basic Books.
+
+Shneiderman, B., Plaisant, C., Cohen, M., Jacobs, S., & Elmqvist, N. (2016). *Designing the user interface: Strategies for effective human-computer interaction* (6th ed.). Pearson.
