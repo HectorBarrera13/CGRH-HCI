@@ -1,0 +1,19 @@
+# AI Tools for UI Development
+
+For this reflection I explored **v0 by Vercel**, a tool that generates UI components or even entire web pages from text prompts. It produces React code using Tailwind CSS and ready to use components. I used it to build a couple of screens related to our project: a login screen and a simple dashboard where an employee can view and download their CFDI documents (we have already made them but it's for the experiment).
+
+The quality of the output was way better than I expected. The interfaces looked clean and consistent, with good layout and spacing. The overall looks were very appealing and modern and the code was well structured and easy to understand, even as someone who doesn't dabble a lot in Frontend coding. It was impressive how quickly I could get a working UI just by describing what I wanted in natural language. From an usability point of view, the UI had good attributes like clear labels, readable text and logical layout. But it lacked some important ones like good error handling, helpful feedback or accessibility features. I had to prompt it specifically for those things to get them included. I think that given my initial prompt, the tool focused more on the visual aspect and less on the usability details. This is expected but it shows that the tool is not a complete solution for UI design.
+
+Using v0 was easy. You describe what you want and in a few seconds you get working code. Making changes is also simple, you just keep the conversation going. What I learned quickly is that the result depends a lot on how detailed your prompt is. A vague description gives a generic result. A specific one, mentioning error states, loading feedback or help links, gives something much more usable. The version I used was the "Max" version and it was powered by Opus 4.6, which to my knowledge is a very capable model, if not the most, and it understood most of the context very well.
+
+> **AI tools can produce very decent UI fast, but the usability of the result depends on how much the dev using the tool already knows about good design.** The tool just builds what it is told and seems to prioritize the visuals without more context. I think this is a very valuable tool for quickly prototyping UI ideas, but it does not replace a designer that understands usability. It is a great assistant but we still need to know what to ask for. For more comercial use, like a restaurant website, it could be a very good solution, but for more complex applications like our project it would require more complex prompt engineering to get something that is both visually attractive and usable. It isn't a silver bullet but it does speed up the process and can help us focus on the more important design decisions rather than the technical details of coding.
+
+I do think the UX role will change because of AI tools. The more repetitive parts of UI production will be done by AI. But understanding users, their needs and their problems will keep requiring a person. Only a human can understand another in a deeper way. The role will probably become more about guiding and evaluating AI output than building everything from scratch. As I'm working on the backend side of coding, I see a parallel with how the coding in there has transformed too. We do the logic and architectural design and let the agents generate the more repetitive code. But we still need to understand the problem deeply to guide the process and ensure the result is good.
+
+In conclusion, tools like v0 are useful for moving fast in early stages of development. But they do not replace usability knowledge. They only make it easier to apply what you already know.
+
+---
+
+## References
+
+Vercel. (2024). *v0 by Vercel: Generate UI with simple text prompts*. Retrieved from https://v0.dev
