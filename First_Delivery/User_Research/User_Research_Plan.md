@@ -1,40 +1,33 @@
-# Plan de Trabajo – User Research
+# Work Plan – User Research
 
 ## CGRH System – UADY
 
-**Fecha límite:** 28 de febrero  
-**Equipo:** Héctor Barrera, Héctor Castro, Rodrigo Alonzo, Damián Villares
+**Deadline:** February 28
+**Team:** Héctor Barrera, Héctor Castro, Rodrigo Alonzo, Damián Villares
 
 ---
 
-## Tabla de actividades
-
-| Actividad                      | Tareas principales                                                | Responsable(s)                                  | Fechas estimadas | Entregables / Artefactos                       |
-| ------------------------------ | ----------------------------------------------------------------- | ----------------------------------------------- | ---------------- | ---------------------------------------------- |
-| Planeación de la investigación | Definir objetivos, seleccionar métodos, definir perfil de usuario | Héctor Barrera, Héctor Castro                   | 17–18 feb        | Objetivo de investigación, lista de métodos    |
-| Diseño de instrumentos         | Crear guía de entrevistas, encuestas y tareas de usabilidad       | Rodrigo Alonzo, Damián Villares, Héctor Barrera | 19–20 feb        | Guía de entrevistas, encuesta, lista de tareas |
-| Entrevistas                    | Aplicar entrevistas a usuarios adultos mayores                    | Héctor Castro                                   | 21–22 feb        | Notas de entrevistas                           |
-| Contextual Inquiry             | Observación del uso del sistema en entorno real                   | Rodrigo Alonzo                                  | 22 feb           | Registro de observaciones                      |
-| Encuestas                      | Aplicación y consolidación de encuestas                           | Damián Villares, Héctor Castro                  | 23 feb           | Resultados de encuestas                        |
-| Pruebas de usabilidad          | Ejecución de tareas clave con prototipo                           | Héctor Barrera, Rodrigo Alonzo                  | 24–25 feb        | Registro de errores y tiempos                  |
-| Análisis de resultados         | Identificación de patrones y problemas                            | Equipo completo                                 | 26 feb           | Lista priorizada de problemas                  |
-| Artefactos de UX               | Creación de personas y escenarios                                 | Damián Villares, Héctor Castro                  | 27 feb           | Personas, escenarios                           |
-| Documentación final            | Organización de evidencias y reporte                              | Héctor Barrera, Rodrigo Alonzo                  | 28 feb           | Reporte final, repositorio organizado          |
-
+## Activity Table
+| Activity                    | Main Tasks                                                        | Responsible(s)                                  | Estimated Dates | Deliverables / Artifacts                       |
+| --------------------------- | ----------------------------------------------------------------- | ----------------------------------------------- | --------------- | ---------------------------------------------- |
+| Research Planning           | Define objectives, select methods, define user profile            | Héctor Barrera, Héctor Castro                   | Feb 17–18       | Research objective, methods list               |
+| Instrument Design           | Create interview guide, surveys, and usability tasks              | Rodrigo Alonzo, Damián Villares, Héctor Barrera | Feb 19–20       | Interview guide, survey, task list             |
+| Interviews                  | Conduct interviews with elderly users                             | Héctor Castro                                   | Feb 21–22       | Interview notes                                |
+| Contextual Inquiry          | Observe system usage in real environment                          | Rodrigo Alonzo                                  | Feb 22          | Observation records                            |
+| Surveys                     | Application and consolidation of surveys                          | Damián Villares, Héctor Castro                  | Feb 23          | Survey results                                 |
+| Usability Testing           | Execution of key tasks with prototype                             | Héctor Barrera, Rodrigo Alonzo                  | Feb 24–25       | Error and time logs                            |
+| Results Analysis            | Identification of patterns and issues                             | Full team                                       | Feb 26          | Prioritized problem list                       |
+| UX Artifacts                | Creation of personas and scenarios                                | Damián Villares, Héctor Castro                  | Feb 27          | Personas, scenarios                            |
+| Final Documentation         | Organization of evidence and report                               | Héctor Barrera, Rodrigo Alonzo                  | Feb 28          | Final report, organized repository             |
 ---
-
-## Evidencia de trabajo colaborativo
-
-- Asignación clara de responsables
-- Entregables individuales y grupales
-- Evidencia documentada en el repositorio
-- Trazabilidad entre actividades, resultados y requerimientos
-
+## Evidence of Collaborative Work
+- Clear assignment of responsibilities
+- Individual and group deliverables
+- Documented evidence in the repository
+- Traceability between activities, results, and requirements
 ---
-
-## Relación con la rúbrica
-
-- **Project Process – User Research:** Métodos definidos, justificados y ejecutados
-- **User Modeling:** Personas y escenarios basados en evidencia
-- **Repository & Documentation:** Evidencia clara y organizada
-- **Collaborative Work:** Distribución objetiva de tareas
+## Relation to the Rubric
+- **Project Process / User Research:** Methods defined, justified, and executed
+- **User Modeling:** Personas and scenarios based on evidence
+- **Repository & Documentation:** Clear and organized evidence
+- **Collaborative Work:** Objective distribution of tasks
