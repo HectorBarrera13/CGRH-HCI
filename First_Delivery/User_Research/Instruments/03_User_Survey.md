@@ -1,25 +1,32 @@
-# Encuesta de Usuario
-## Actividad 3: Survey — CGRH UADY
+# User Survey
+## Activity 3: Survey — CGRH UADY
 
-**Elaborado por:** Rodrigo Alonzo
+**Prepared by:** Rodrigo Alonzo  
+**Date:** February 26, 2026  
+**Target profile:** Retired UADY employees, over 60 years of age
 
-**Fecha:** 26 de febrero de 2026
+---
 
-**Perfil objetivo:** Empleados jubilados de la UADY, mayores de 60 años
+## Researcher Notes
+
+This survey is applied in person by a team member who assists the participant in reading and answering if needed. All questions directed at the participant are written in Spanish to ensure comprehension.
+
+**Estimated time:** 15 – 20 minutes  
+**Modality:** In-person, assisted by a researcher
 
 ---
 
 ## Instrucciones
+*(For participant — in Spanish)*
 
 Esta encuesta es parte de un proyecto académico para mejorar el sistema de autoservicio de la Coordinación General de Recursos Humanos (CGRH) de la UADY. Sus respuestas son confidenciales y se usarán únicamente para fines de investigación. No hay respuestas correctas o incorrectas. Por favor conteste con tranquilidad y honestidad.
 
-*Tiempo estimado: 15 – 20 minutos. Si necesita ayuda para leer o contestar alguna pregunta, puede pedirla al encuestador.*
+*Si necesita ayuda para leer o contestar alguna pregunta, puede pedirla al encuestador.*
 
 ---
 
 ## Sección A – Datos Generales
-
-*(Estas preguntas nos ayudan a entender el perfil de los participantes. Sus datos personales no serán publicados.)*
+*(These questions help us understand participant profiles. Personal data will not be published.)*
 
 **P1. ¿Cuántos años tiene usted?**
 
@@ -123,8 +130,7 @@ Respuesta: _______________________________________________
 ---
 
 ## Sección D – Expectativas del Sistema CGRH en Línea
-
-*Las siguientes preguntas son sobre un sistema en línea (en computadora) que la UADY está diseñando para que usted pueda consultar su información financiera desde casa, sin necesidad de ir a las oficinas.*
+*(Researcher note: Briefly explain the concept of the self-service system before this section if the participant is unfamiliar with it.)*
 
 **P13. Si existiera ese sistema, ¿lo usaría?**
 
@@ -200,8 +206,6 @@ Respuesta: _______________________________________________
 ## Comentarios Adicionales
 
 **P21. ¿Hay algo más que le gustaría comentar sobre cómo la UADY podría mejorar los trámites en línea para los jubilados?**
-
-_______________________________________________
 
 _______________________________________________
 

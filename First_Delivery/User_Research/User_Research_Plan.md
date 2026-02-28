@@ -1,6 +1,6 @@
 # Plan de Trabajo – User Research
 
-## Sistema CGRH – UADY
+## CGRH System – UADY
 
 **Fecha límite:** 28 de febrero  
 **Equipo:** Héctor Barrera, Héctor Castro, Rodrigo Alonzo, Damián Villares
