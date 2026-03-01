@@ -1,6 +1,6 @@
 # Project Plan
 
-## UADY.10.25 – UADY Benefits System
+## UADY Benefits System CGRH
 
 **General Coordination of Human Resources (CGRH) – Universidad Autónoma de Yucatán**
 
@@ -87,13 +87,7 @@ The research process aims to collect the following types of information from the
 
 ---
 
-## 3. Document Repository
-
-> 🚧 _Section pending — to be completed with the GitHub repository folder structure and file index._
-
----
-
-## 4. Team Roles and Responsibilities
+## 3. Team Roles and Responsibilities
 
 | Member          | Primary Role             | Responsibilities                                                             |
 | --------------- | ------------------------ | ---------------------------------------------------------------------------- |
@@ -106,7 +100,7 @@ The research process aims to collect the following types of information from the
 
 ---
 
-## 5. Contribution Metrics
+## 4. Contribution Metrics
 
 Quantifiable individual contribution evidence is tracked through:
 
