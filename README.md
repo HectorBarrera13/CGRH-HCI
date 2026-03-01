@@ -1,4 +1,4 @@
-# UADY.10.25 – UADY Benefits System (HCI Analysis)
+# UADY Benefits System CGRH (HCI Analysis)
 
 **Client:** General Coordination of Human Resources (CGRH) — Universidad Autónoma de Yucatán  
 **Course:** Human-Computer Interaction — Faculty of Mathematics, UADY  
