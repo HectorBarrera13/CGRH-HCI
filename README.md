@@ -31,9 +31,11 @@ The HCI project focuses specifically on **retired UADY employees over 60 years o
 
 ```
 First_Delivery/
+├── Activity_List.md                # Activity calendar and task distribution
 ├── DCU_Methodology.md              # UCD methodology and process overview
 ├── Project_Plan.md                 # Research plan, activity calendar, and responsibilities
 ├── Rubric.md                       # Delivery rubric
+├── Video.md                        # Presentation video link
 ├── ProductRequirements/
 │   └── ProductRequirements.md      # Functional and non-functional requirements
 ├── Project_Definition/
