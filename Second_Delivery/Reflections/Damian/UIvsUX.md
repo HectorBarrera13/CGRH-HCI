@@ -1,0 +1,7 @@
+## UI vs UX
+
+The principal difference between UI and UX is that the UI means User Interface, so it refers to the technical elements enable the user to interact with the product, it could be controls, buttons, typography, icons, and interactive components. The UX means User Experience, that is the satisfaction by optimally developing the usability and positive emotional response a visitor experience; the keyword is experience. In summary the article says that UI is the components that enable a user to efficiently use your product, and UX is the culminating effect of all those components on the user. It is very important to difference these two concepts, to make better decisions in each one of this parts of the interface development, we need to know what we exactly are working on. Both aspects are equally important to ensuring the best possible user satisfaction.
+
+For example, the UI in our project could be from RF02 when a user enters an account that is not in the system during the password recovery, deciding what the message looks like, their position, color, icon, font size, all of that is a UI decision.
+
+For the UX we have other example, when a user puts the wrong password, the message we show to the user after this failed, is part of the UX decision, we need to make that one the user put the wrong password, feels confident to continue with the process without the feeling that he broke something.
