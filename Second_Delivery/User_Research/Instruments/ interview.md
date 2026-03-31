@@ -56,20 +56,29 @@ _Objective: Quickly establish digital literacy level and usage context._
 
 _Objective: Understand current procedure habits and pain points._
 
-4. ¿Ha necesitado hacer algún trámite con la CGRH desde que se jubiló, como obtener su recibo de nómina o consultar su Fondo de Ahorro?
-5. ¿Con qué frecuencia ha tenido que hacer esos trámites? ¿Cada cuánto tiempo? _(Probe: mensual, trimestral, anual)_
-6. ¿Cómo lo ha hecho normalmente — viene en persona, llama por teléfono, alguien le ayuda, lo descarga por correo electrónico?
-7. ¿Ha tenido alguna dificultad para hacer esos trámites?
+5. ¿Ha necesitado hacer algún trámite con la CGRH desde que se jubiló, como obtener su recibo de nómina o consultar su Fondo de Ahorro?
+6. ¿Con qué frecuencia ha tenido que hacer esos trámites? ¿Cada cuánto tiempo? _(Probe: mensual, trimestral, anual)_
+7. ¿Cómo lo ha hecho normalmente — viene en persona, llama por teléfono, alguien le ayuda, lo descarga por correo electrónico?
+8. ¿Ha tenido alguna dificultad para hacer esos trámites?
 
 ---
 
-### Block C – System Expectations _(2–3 min)_
+### Block C – System Expectations _(6–8 min)_
 
 _Objective: Capture key expectations and concerns about the digital system._
 
-8. Si hubiera una página donde pudiera ver sus recibos y su Fondo de Ahorro y de vivienda sin venir a las oficinas, ¿la usaría?
-9. Cuando usa páginas de internet, ¿Qué es lo que le cuesta trabajo o que no le guste? _(Probe: ¿Algo que le haya confundido, que no encontrara, o que le diera desconfianza?)_
-10. ¿Qué es lo que usted más valora en una página de internet? _(Probe: ¿Que sea fácil de usar, que sea segura, que tenga toda la información clara, que tenga colores visibles?)_
+9. Si hubiera una página donde pudiera ver sus recibos y su Fondo de Ahorro sin venir a las oficinas, ¿la usaría?
+10. ¿Qué es lo que le cuesta trabajo o no le gusta al usar páginas de internet?
+11. Si algo no le saliera como esperaba, ¿qué haría?
+12. ¿Le daría más confianza usar esa página si alguien le mostrara cómo funciona la primera vez?
+13. ¿Qué hace primero al entrar a una aplicación o página nueva?
+14. ¿Ha dejado de hacer algún trámite en línea porque no se sintió seguro?
+15. ¿Le preocuparía que alguien más pudiera ver su información?
+16. Si no encontrara un documento donde esperaba, ¿qué haría?
+17. Si la página tiene letras o botones pequeños, ¿le costaría trabajo usarla?
+18. ¿Cómo sabría que un trámite sí funcionó?
+19. ¿Recordaría cómo usar la página si no la usa por varios meses?
+20. ¿Cuánto tiempo sería razonable para obtener un documento?
 
 ---
 
