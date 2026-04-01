@@ -6,91 +6,62 @@ Analysis date: 03/20/2026
 
 ## Context
 
-Based on the qualitative analysis of 6 interviews conducted with teaching and administrative staff at UADY, 8 groups of findings were identified in the affinity diagram. Of those 8, **4 critical attributes** were selected as they concentrate the highest risks of abandonment, error, and distrust in the system. These attributes are not the only relevant ones, but they are the ones that, if not addressed through design, could compromise the adoption of the system entirely.
+Based on the qualitative analysis of 6 interviews conducted with teaching and administrative staff at UADY, 8 groups of findings were identified in the affinity diagram. Of those 8, **2 critical attributes** were selected as they concentrate the highest risks of abandonment and distrust in the system. Rather than treating each finding in isolation, related patterns were merged into broader attributes that address the same underlying user need. These are the two areas that, if not addressed through design, could compromise adoption of the system entirely.
 
 ---
 
-## Attribute 1: Ease of Navigation
+## Attribute 1: Intuitive Navigation
 
 **Why we selected it**
 
-This is the most frequently mentioned pain point across all interviews. Five out of six users expressed — directly or indirectly — that complex or unintuitive navigation frustrates them and leads them to abandon the task.
+Navigation difficulty was the most frequently mentioned pain point across all interviews — five out of six users expressed that complex or inconsistent navigation leads them to abandon tasks. But the issue goes beyond a single session: the CGRH system will be used infrequently, with payroll receipts checked biweekly and the Savings Fund consulted only every 6 months. This means that every time a user returns to the system, they may feel like they are using it for the first time.
 
-The target user profile engages with digital platforms occasionally and does not have consolidated experience with web conventions. When the structure of a page is unclear, the user does not look for an alternative solution within the system: they simply stop.
+A system can be simple to learn the first time but still require re-learning after months of inactivity. For the CGRH system to succeed, it must be intuitive enough that users can pick it up again without needing to remember specific steps or ask for help.
 
 > *"The navigation; sometimes she can't find what she's looking for."* — E1  
 > *"Too many steps; she prefers it to be simple."* — E3  
+> *"It depends; if the navigation is easy, yes — if it has too many steps, she can get lost."* — E1  
+> *"She would have to write down how to use it."* — E2  
 > *"Navigation changes a lot from one page to another."* — E6
 
-Additionally, since system use will be infrequent (biweekly for payroll, every 6 months for the Savings Fund), each session may feel like the first time. If the navigation is not immediately understandable, the user will lose both time and confidence.
-
-**Design implication:** minimize the number of steps required to access documents or complete a procedure. Maintain a predictable structure with clear labels and no deep menus.
+**Design implication:** minimize the number of steps required to reach any document or complete any procedure. Use clear, descriptive labels and recognizable patterns so that a user returning after 6 months can orient themselves immediately — without a tutorial, without assistance, and without having to remember where things were last time.
 
 ---
 
-## Attribute 2: Error Handling and Prevention
+## Attribute 2: Error Prevention
 
 **Why we selected it**
 
-The dominant response to any error or unexpected situation is to escalate to another person — a colleague, a family member, or the support team. Only two users (E3 and E4) attempt to resolve the problem on their own before escalating. E5, the youngest participant, would simply abandon the task.
+When something goes wrong — or even when something goes right — the CGRH user does not act without a clear signal from the system. These two behaviors are two sides of the same problem: users cannot recover from errors on their own, and users do not trust that a completed action worked unless the system tells them so explicitly.
 
-This means the system cannot rely on users knowing what to do when something goes wrong. If an ambiguous error message appears, or if a flow does not respond as expected, the most likely outcome is that the user leaves the system and does not return on their own.
+On the error side, the dominant response across participants was to stop, ask someone for help, or abandon the task entirely. Only two users (E3 and E4) attempt to resolve issues independently. E5, the youngest participant, stated he would simply leave the task unfinished. This means the system must prevent errors before they happen — it cannot rely on users troubleshooting on their own.
+
+On the feedback side, all 6 participants expect an explicit confirmation after any completed procedure. Without it, they distrust the result and may repeat the action or go to the offices in person to verify. The preferred confirmation channel is email, which is already embedded in their daily workflow.
 
 > *"He would leave it."* — E5, if something does not go as expected  
 > *"She would ask for help."* — E1, E2, when facing any error  
-> *"Call someone."* — E6
-
-**Design implication:** prevent errors before they occur through real-time validations and confirmation prompts before irreversible actions. When an error does occur, the message must explain what happened and what the user can do next — not just display a code or a generic alert.
-
----
-
-## Attribute 3: System Status Visibility
-
-**Why we selected it**
-
-100% of participants expect to receive an explicit confirmation after completing a procedure. No user trusts that an action worked unless there is a visible signal indicating so. The preferred confirmation channel is email, which is already part of their daily workflow.
-
-This finding is unanimous and has no exceptions. The absence of feedback would not just cause discomfort — it would generate active distrust, potentially leading users to repeat the procedure or visit the offices in person to verify.
-
 > *"Some notification or email saying 'procedure in progress'."* — E1  
 > *"She needs a receipt confirming the action was completed."* — E4  
 > *"Expects them to send a confirmation email."* — E5, E6
 
-**Design implication:** confirm every relevant action at two moments: immediately on screen (a visible success message) and subsequently by email (a channel already familiar and trusted by the user).
+**Design implication:** prevent errors proactively through real-time validation and confirmation prompts before irreversible actions. When an error does occur, the message must explain what happened and what the user should do next. Every completed action must produce a visible on-screen confirmation and a follow-up email — both signals are necessary for the user to trust the system.
 
 ---
 
-## Attribute 4: Memorability
+## How the Two Attributes Connect
 
-**Why we selected it**
+These two attributes are not independent. A clear, predictable navigation reduces the likelihood of errors occurring in the first place. And a system that communicates its state reliably — whether through error messages or success confirmations — makes users more willing to return and try again, reinforcing the memorability of the experience over time.
 
-Unlike a daily-use application, the CGRH system will be used infrequently: payroll receipts arrive biweekly and the Savings Fund is checked every 6 months. This makes memorability a critical attribute — users do not have the opportunity to "practice" until they become proficient.
-
-Two users (E1 and E2) already anticipate having difficulty remembering how to use the system after a period of inactivity. E4, who uses digital platforms more regularly, explicitly mentions that she forgets how to use pages she visits infrequently.
-
-> *"It depends; if the navigation is easy, yes — if it has too many steps, she can get lost."* — E1  
-> *"She would have to write down how to use it."* — E2  
-> *"She finds it difficult that she forgets how to use them."* — E4
-
-**Design implication:** the system must be resumable without requiring users to remember specific steps from their previous session. Descriptive labels, recognizable icons, and short flows reduce cognitive load and the need to relearn the interface.
+Addressing both attributes consistently across the system is the minimum threshold for the CGRH platform to be trusted and adopted by its target users.
 
 ---
 
-## Relationship Between the 4 Attributes
+## Deprioritized Attributes
 
-The four attributes are not independent — they reinforce each other. Simple navigation reduces the likelihood of errors. Well-handled errors do not interrupt the flow. A flow that users can easily remember reduces their reliance on external help. And visible confirmation at the end of each task closes the loop with confidence.
+The following attributes were identified in the research but are not prioritized in this design phase, either because they can be resolved through localized decisions or because they depend on factors outside the scope of interface design:
 
-Designing these four points well does not guarantee a perfect system, but it does minimize the most likely causes of abandonment identified in the research.
-
----
-
-## Attributes Deprioritized in This Iteration
-
-The following attributes are relevant but are considered secondary at this stage, either because they affect a minority of users or because they can be addressed through more localized design decisions:
-
-| Attribute | Reason for deprioritizing now |
+| Attribute | Reason for deprioritizing |
 |---|---|
-| Visual accessibility | Important, but addressable through style guidelines (font size, contrast). Does not affect the flow architecture. |
+| Visual accessibility | Addressable through style guidelines (font size, contrast, touch targets). Does not affect flow architecture. |
 | Perceived trust and security | Most users feel secure with a username and password. The shared-PC risk (E5) can be resolved with automatic session timeout. |
-| Learnability | Largely resolved if navigation and memorability are well designed. |
-| Resistance to change | Not a direct UX design problem; depends on institutional communication and the system's perceived value proposition. |
+| Resistance to change | Depends on institutional communication and the system's perceived value — not a UX design problem directly. |
