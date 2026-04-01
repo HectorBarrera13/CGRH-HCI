@@ -1,4 +1,5 @@
 # User Research – Activities and Justification
+
 ## General Human Resources Coordination System (CGRH – UADY)
 
 ---
@@ -33,12 +34,12 @@ Of the four originally planned activities — interviews, contextual inquiry, su
 
 The interview guide was structured in three thematic blocks, with an estimated total duration of 36 minutes per session:
 
-| Block | Topic | Duration |
-|---|---|---|
-| Block 1 | Technology use | 5 min |
-| Block 2 | Current CGRH procedures | 10 min |
-| Block 3 | System expectations | 16 min |
-| Opening / Closing | Consent and wrap-up | 5 min |
+| Block             | Topic                   | Duration |
+| ----------------- | ----------------------- | -------- |
+| Block 1           | Technology use          | 5 min    |
+| Block 2           | Current CGRH procedures | 10 min   |
+| Block 3           | System expectations     | 16 min   |
+| Opening / Closing | Consent and wrap-up     | 5 min    |
 
 Each session was conducted by a team of three interviewers and one note-taker. Main questions were supported by follow-up probes to ensure depth of response when initial answers were brief.
 
@@ -65,15 +66,16 @@ The interviews produced qualitative data across 8 thematic groups, analyzed thro
 
 ---
 
-## Activities Not Conducted in This Phase
+## Activities To Be Conducted in the Next Phase
 
-The following activities were originally planned but were not executed in this research cycle. They remain relevant for future iterations.
-
-| Activity | Reason not conducted | Recommended for |
-|---|---|---|
-| Contextual Inquiry | Required extended on-site observation sessions; not feasible within the available timeframe | Next iteration, once a prototype is available |
-| Surveys | Requires broader participant recruitment and distribution logistics; sample access was limited | Validation phase, to quantify patterns found in interviews |
-| Usability Testing | Requires a functional prototype; system is still in design phase | Testing phase, after a low- or mid-fidelity prototype is built |
+| Activity             | Status  | Details                                                      |
+| -------------------- | ------- | ------------------------------------------------------------ |
+| Usability Testing    | Planned | In-person sessions with active UADY employees                |
+| Define Metrics       | Pending | Identify what to measure before running any session          |
+| Build Test Protocol  | Pending | Structure tasks and scenarios participants will complete     |
+| Recruit Participants | Pending | Select employees matching the interviewed profile            |
+| Conduct Sessions     | Pending | Observe and document participant behavior with the prototype |
+| Analyze Results      | Pending | Evaluate whether design decisions work with real users       |
 
 ---
 
