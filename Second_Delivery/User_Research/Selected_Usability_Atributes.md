@@ -14,9 +14,9 @@ Based on the qualitative analysis of 6 interviews conducted with teaching and ad
 
 **Why we selected it**
 
-Navigation difficulty was the most frequently mentioned pain point across all interviews — five out of six users expressed that complex or inconsistent navigation leads them to abandon tasks. But the issue goes beyond a single session: the CGRH system will be used infrequently, with payroll receipts checked biweekly and the Savings Fund consulted only every 6 months. This means that every time a user returns to the system, they may feel like they are using it for the first time.
+Navigation difficulty was the most frequently mentioned pain point across all interviews, five out of six users expressed that complex or inconsistent navigation leads them to abandon tasks or high levels of frustration. But the issue goes beyond a single session: the system will be used infrequently, with payroll receipts checked biweekly and the Savings Funds consulted only every 6 months. This means that every time a user returns to the system, they may feel like they are using it for the first time.
 
-A system can be simple to learn the first time but still require re-learning after months of inactivity. For the CGRH system to succeed, it must be intuitive enough that users can pick it up again without needing to remember specific steps or ask for help.
+A system can be simple to learn the first time but still require re-learning after months of inactivity. For the system to succeed, it must be intuitive enough that users can pick it up again without needing to remember specific steps or ask for help.
 
 > *"The navigation; sometimes she can't find what she's looking for."* — E1  
 > *"Too many steps; she prefers it to be simple."* — E3  
@@ -32,11 +32,11 @@ A system can be simple to learn the first time but still require re-learning aft
 
 **Why we selected it**
 
-When something goes wrong — or even when something goes right — the CGRH user does not act without a clear signal from the system. These two behaviors are two sides of the same problem: users cannot recover from errors on their own, and users do not trust that a completed action worked unless the system tells them so explicitly.
+When something goes wrong or even when something goes right the user does not act without a clear signal from the system. These two behaviors are two sides of the same problem: users cannot recover from errors on their own, and users do not trust that a completed action worked unless the system tells them so explicitly.
 
 On the error side, the dominant response across participants was to stop, ask someone for help, or abandon the task entirely. Only two users (E3 and E4) attempt to resolve issues independently. E5, the youngest participant, stated he would simply leave the task unfinished. This means the system must prevent errors before they happen — it cannot rely on users troubleshooting on their own.
 
-On the feedback side, all 6 participants expect an explicit confirmation after any completed procedure. Without it, they distrust the result and may repeat the action or go to the offices in person to verify. The preferred confirmation channel is email, which is already embedded in their daily workflow.
+On the feedback side, all 6 participants expect an explicit confirmation after any completed procedure. Without it, they distrust the result and may repeat the action or go to the offices in person to verify. The preferred confirmation channel is email, which is already embedded in their daily workflow. At the current scope of the project, the email confirmations are not included as they are related to the benefits that require a formal procedure and our scope is more on the informational side of the system. However, the design must still include on-screen confirmations for all completed actions, and the system architecture should be designed to accommodate email confirmations in the future when the benefits module is implemented.
 
 > *"He would leave it."* — E5, if something does not go as expected  
 > *"She would ask for help."* — E1, E2, when facing any error  
@@ -44,7 +44,7 @@ On the feedback side, all 6 participants expect an explicit confirmation after a
 > *"She needs a receipt confirming the action was completed."* — E4  
 > *"Expects them to send a confirmation email."* — E5, E6
 
-**Design implication:** prevent errors proactively through real-time validation and confirmation prompts before irreversible actions. When an error does occur, the message must explain what happened and what the user should do next. Every completed action must produce a visible on-screen confirmation and a follow-up email — both signals are necessary for the user to trust the system.
+**Design implication:** prevent errors proactively through real-time validation and confirmation prompts before irreversible actions. When an error does occur, the message must explain what happened and what the user should do next. Every completed action must produce a visible on-screen confirmation and a follow-up email if we deem it necessary, both signals are necessary for the user to trust the system.
 
 ---
 
