@@ -6,4 +6,8 @@ The key insight was not about the technical bug, it was about motivation. As Tra
 
 This applies directly to the CGRH project. Our users have strong intrinsic motivation, they need their CFDI for bank procedures, their savings fund for financial decisions. That motivation is a design advantage, but not an unlimited one. The lesson is clear: motivation determines how much friction a user will tolerate, but no amount of motivation compensates for a broken flow, an expired link, or an error message that does not explain what to do next.
 
+---
+
+### References
+
 Travis, D. (2010). Creating usability test tasks that really motivate users. Userfocus. https://www.userfocus.co.uk/articles/testtasks.html
