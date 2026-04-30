@@ -1,0 +1,5 @@
+# Free Topic
+
+I want to share this experience, last day I went to Burger King with my mom and the cashier wasn't accepting cash so I had to pay with credit card at a self-order kiosk, so it was my opportunity to check how big companies apply usability in real life. I didn't expect the results, I want to scan the combo via QR and didn't know where I had to scan it, so I wanted to do it manually and while I was navigating on this kiosk I get lost (me, that I am studying for a degree in software engineering), so I had to ask for help and an employee told me that I had to scan my QR code in a small rectangle that was barely visible and there was no sign to scan in that area.
+
+It's not only on BK, last month happened to me the same thing in KFC and the reality is that big companies aren't even interested in usability; it even makes you want to say that I can do it better, this isn't a criticism, but it does make me wish that multi-million dollar companies have these difficulties and that there are one employee dedicated to helping in these situations, which was the case for all the people who ordered while I was there. Bad review, one out of five.

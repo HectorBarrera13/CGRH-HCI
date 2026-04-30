@@ -1,0 +1,9 @@
+# UI vs UX in the CGRH System
+
+The article defines UI as the visual and interactive elements that allow the user to interact with the system (buttons, tables, forms, icons) while UX refers to the overall experience and emotional response the user has throughout that interaction. In short, UI is what the user sees and touches; UX is how the user feels as a result.
+
+A clear example of UI in the CGRH system is the table in the CFDI module, which displays all of the user's CFDIs and includes pagination controls to navigate through records from previous years. Another UI example is the form used to filter CFDIs by date range or status, giving the user direct controls to narrow down the information displayed.
+
+Positive UX example: The CFDI module includes a bulk download feature that allows users to retrieve multiple files simultaneously. This decision responds directly to real user behavior, since CFDIs accumulate frequently and users often need several documents from the same period. By anticipating this need, the system reduces the effort required to complete a common and recurring task, resulting in an efficient and satisfying experience that builds trust in the system.
+
+Negative UX example: During the registration process, the form is divided into two sections. In the first one, the user enters their full institutional email (usuario.apellido@correo.uady.mx) along with other personal data. In the second section, the system informs the user that their username is usuario.apellido (the portion of the email before the @ symbol) and then asks them to set a password. However, this transition lacks a clear explanation of why the username was derived that way or whether it will be needed for future logins. As a result, users may complete the registration feeling uncertain about their own credentials, which negatively impacts their confidence and overall experience with the system.
