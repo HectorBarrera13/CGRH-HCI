@@ -11,3 +11,9 @@ The metric I would use is the SUS score, the System Usability Scale. SUS is a st
 The scenario would be applied at the end of a usability session, after participants have completed a set of tasks on the platform. Once the tasks are done, each participant fills out the SUS questionnaire independently. No instructions beyond what the form itself says.
 
 The data collected would be the individual SUS scores per participant. Analysis would consist of calculating the average score across all participants and comparing it against the SUS benchmark scale. Scores below 68 would indicate the system is underperforming on perceived usability. Beyond the aggregate, looking at which specific items score lowest points directly to what is driving dissatisfaction, whether that is confidence while using the system, the need for technical support, or perceived inconsistency.
+
+## References
+
+- ISO 9241-11:2018. *Ergonomics of human-system interaction — Part 11: Usability: Definitions and concepts.* International Organization for Standardization.
+- Brooke, J. (1996). SUS: A quick and dirty usability scale. In *Usability Evaluation in Industry.* Taylor & Francis.
+- Bangor, A., Kortum, P., & Miller, J. (2009). Determining what individual SUS scores mean: Adding an adjective rating scale. *Journal of Usability Studies, 4*(3), 114–123.
