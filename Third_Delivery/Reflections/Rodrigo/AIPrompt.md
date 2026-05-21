@@ -1,0 +1,11 @@
+## AI Prompt
+
+We did this a few weeks ago ngl, but it were expecting to test 60+ years old people. At that moment we chose learnability as our main attribute, specifically, how easily a first-time user over 60 years old can learn to operate an CGRH system without prior experience. I think it went well because the prompt made was specific and not generic, detailing user profiles, attribute focus, output format constraints and quality filter.
+
+Designing this manually took between 1 or 2 hours of call because we had to prioritize attributes, drafting scenarios, looking and mapping each task of metrics and we had other things to do with other subjects, so we did it in a couple days including documentation and revision with all parts of the team. All of this took me like 5 minutes with AI because I got delayed thinking and writing that prompt, and the result was there instantly.
+
+Each way has its pros and cons, we can engage deeply with the specific system, actual mental models of the target users and we can check other ways apart of happy path but IA can suggest us more ideas of metrics that we haven't think yet, produce a structurally sound set of tasks and anticipate common failure points, being a great start, so we uses IA when we need a quick starting point and from that we work because IA doesn't understand when we require deep ethnographic understanding.
+
+**AI Used:** Claude because sources (Hectors) says it's the best AI to use right now 
+
+**Prompt:** *Actúa como un experto en UX y pruebas de usabilida, estoy evaluando un sistema que centraliza la gestión de recursos humanos y necesito diseñar tareas de prueba para analizar dos atributos: navegabilidad (facilidad para moverse dentro del sistema y encontrar información) y learnability (qué tan fácil es para un usuario nuevo aprender a usar el sistema). Considera que tengo usuarios jubilados mayores de 60 años, utilizando laptop y celular, sin experiencia previa en la plataforma. Genera entre 5 y 8 tareas realistas escritas como instrucciones claras para el usuario, indicando para cada una qué atributo evalúa (navegabilidad, learnability o ambos), junto con métricas sugeridas y posibles problemas de usabilidad que podrían detectarse, evitando tareas ambiguas y asegurando que simulen escenarios reales de uso.*
